@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Inan Celis</h1>
+        <h1>Inan Celis Test</h1>
         <a
           className="App-link"
           href="https://inan-celis.surge.sh/"
