@@ -5,7 +5,11 @@ function About() {
   useHelperFunction('| About');
   return (
     <Layout>
-      <h2>About Page</h2>
+      <div className='container pt-5'>
+        <div class="text-container">
+          <h1>Details</h1>
+        </div>
+      </div>
     </Layout>
   );
 }

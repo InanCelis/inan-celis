@@ -5,7 +5,11 @@ function Home() {
   useHelperFunction('');
   return (
     <Layout>
-      <h2>Home Page</h2>
+      <div className='container pt-5'>
+        <div class="text-container">
+          <h1>INAN CELIS</h1>
+        </div>
+      </div>
     </Layout>
   );
 }

@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -33,35 +32,32 @@ body {
 }
 
 
-.logo {
-  width: 150px;
-  padding: 12px;
-  height: auto;
-  g{
-    fill: color(textColor);
+.text-container h1{
+  font-family: $font-raleway;
+  font-size: 130px;
+  color: rgba(136, 131, 131, 0.1);
+  background-image: url("https://s31.postimg.cc/yaze1agjv/abstract-background-canvas-249798.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: cover;
+  background-clip:text;
+  animation: animate 18s linear infinite;
+  text-align: center;
+  margin-top: 17%;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@keyframes animate {
+  0%{
+    background-position: left 0px top 10px;
+  }
+    40%{
+      background-position: left 800px top 10px;
   }
 }
 
 
-nav {
-  
-  a{
-    color: color(textColor);
-    text-decoration: none;
-    padding: 5px;
-    margin: 0 3px;
-    font-weight: 800;
-
-    &:hover {
-      color: color(main) !important;
-      text-decoration: none;
-    }
-  }
-
-  .active {
-    color: color(main) !important;
-  }
-}
 
 
 

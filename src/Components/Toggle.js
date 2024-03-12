@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import "../assets/styles/toggle.scss";
 import { setTheme } from '../utils/themes';
 
@@ -17,7 +17,7 @@ function Toggle() {
     }
 
     return (
-      <div class="trigger" onClick={handleOnClick}></div>
+      <div className="trigger" onClick={handleOnClick}></div>
     )
 }
 

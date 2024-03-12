@@ -15,8 +15,9 @@
   transition: all 0.5s ease-out;
 
   right: 3%;
-  bottom: 3%;
+  top: 8%;
   position: fixed;
+  z-index: 99999;
 }
 
 [data-theme="theme-dark"] .trigger {
