@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import { NavLink } from "react-router-dom";
+
 import "../../assets/styles/App.scss";
 import Toggle from "../Toggle";
 import { Link } from "react-router-dom";
@@ -11,18 +13,17 @@ function Layout({ children }) {
     }, [setClassName])
 
   return (
-    <div className={`App ${className}`}>
+    <>
         <Logo/>
         <div className="main-container">
-            <Link to='/'>Home </Link>
-            <Link to='/about'>About</Link>
-            <Toggle  setClassName={setClassName} />
+          <nav>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>About</NavLink>
+          </nav>
+            <Toggle  setClassName={setClassName} className="w-100"/>
             {children}
         </div>
-        
-      {/* display the child prop */}
-      
-    </div>
+    </>
   );
 }
 
