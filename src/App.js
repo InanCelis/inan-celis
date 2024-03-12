@@ -1,35 +1,22 @@
 
-import { Link } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
-import Home from './pages/Home';
-import Toggle from "./Components/Toggle";
+import { BrowserRouter as Router, HashRouter, Route, Routes } from "react-router-dom";
 
-import { keepTheme } from './utils/themes';
-import { useHelperFunction } from './utils/helperFuntion';
+import Home from './pages/Home';
+import About from './pages/About';
+
 
 function App() {
-  const [className, setClassName] = useState("theme-dark");
-
-  useHelperFunction();
-  useEffect(() => {
-    keepTheme(setClassName)
-    
-  }, [setClassName])
-
   return (
-    <div className={`App ${className}`}>
-      <div className="main-container">
-        <h1>Abbey Perini's Portfolio</h1>
-        <Home home={true} />
-        <Toggle  setClassName={setClassName} />
-        <div>
-          <Link to='/'>Layout</Link>
-          <Link to='/home'>Home</Link>
-          <Link to='/about'>About</Link>
-      </div>
-      </div>
-    </div>
+      // <HashRouter>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </HashRouter>
+   
   );
+
 }
 
 export default App;

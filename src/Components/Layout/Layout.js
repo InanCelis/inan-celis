@@ -14,7 +14,7 @@ function Layout({ children }) {
     <div className={`App ${className}`}>
         <Logo/>
         <div className="main-container">
-            <Link to='/home'>Home </Link>
+            <Link to='/'>Home </Link>
             <Link to='/about'>About</Link>
             <Toggle  setClassName={setClassName} />
             {children}
