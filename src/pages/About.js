@@ -5,7 +5,7 @@ function About() {
   useHelperFunction('| About');
   return (
     <Layout>
-      <h2>About</h2>
+      <h2>About Page</h2>
     </Layout>
   );
 }
