@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import '_variables';
+@import 'functions';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+}
+
+html, #root {
+  font-family: 'Roboto Mono', monospace;
+  color: color(textColor);
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: color(bgColor);
+  color: color(textColor);
+  transition: $transition;
+}
+
+
+.logo {
+  width: 150px;
+  padding: 12px;
+  height: auto;
+  g{
+    fill: color(textColor);
+  }
+}
+
+
+

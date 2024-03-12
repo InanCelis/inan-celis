@@ -1,0 +1,34 @@
+
+$font-nunito:"Nunito Sans", sans-serif;
+$font-raleway: "Raleway", sans-serif;
+$transition: 0.5s ease background-color, 0.2s ease opacity;
+
+
+
+// [data-theme="darkMode"] {
+//     /* Variables for dark mode */
+//      --main:#397fa7;
+//      --light:#181818;
+//      --dark:#fffafa;
+// }
+
+[data-theme="theme-dark"] {
+    --main:#397fa7;
+    --bg:#181818;
+    --text:#fffafa;
+}
+
+[data-theme="theme-light"] {
+    --main:#397fa7;
+    --bg:#fffafa;
+    --text:#181818;
+}
+
+
+  
+$colors: (
+    main:var(--main),
+    bgColor:var(--bg),
+    textColor:var(--text),
+);
+
