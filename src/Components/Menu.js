@@ -9,7 +9,7 @@ function Layout({ children }) {
       <div>
         <NavLink to="/" className="logo-link"><Logo/></NavLink>
         <nav>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Projects</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>Projects</NavLink>
             <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>Details</NavLink>
             <NavLink to="/resume" className={({ isActive }) => (isActive ? 'active' : '')}>Resume</NavLink>
             <NavLink to="/resume" className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink>

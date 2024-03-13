@@ -12,9 +12,9 @@
 }
 
 html, #root {
-  font-family: 'Roboto Mono', monospace;
+  font-family: $font-raleway;
   color: color(textColor);
-  font-size: 16px;
+  font-size: 17px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -32,7 +32,20 @@ body {
 }
 
 
+.bgColor {
+  background-color: color(bgColor);
+}
+.textColor {
+  color: color(textColor);
+}
 
+.bgMain {
+  background-color: color(main);
+}
+
+.textMain {
+  color: color(main);
+}
 
 
 
