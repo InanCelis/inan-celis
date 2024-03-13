@@ -3,26 +3,21 @@ $font-nunito:"Nunito Sans", sans-serif;
 $font-raleway: "Raleway", sans-serif;
 $transition: 0.5s ease background-color, 0.2s ease opacity;
 
-
-
-// [data-theme="darkMode"] {
-//     /* Variables for dark mode */
-//      --main:#397fa7;
-//      --light:#181818;
-//      --dark:#fffafa;
-// }
-
 [data-theme="theme-dark"] {
-    --main:#397fa7;
+    --main:#22bfdb;
     --bg:#181818;
-    --text:#f1efef;
-    
+    --text:snow;
 }
 
 [data-theme="theme-light"] {
-    --main:#397fa7;
-    --bg:#f1efef;
+    --main:#22bfdb;
+    --bg:snow;
     --text:#181818;
+}
+
+:root {
+    --primary:#6b6b6b;
+    --text-light: color-mix(in lab, var(--text) 60%, transparent);
 }
 
 
@@ -31,5 +26,7 @@ $colors: (
     main:var(--main),
     bgColor:var(--bg),
     textColor:var(--text),
+    primaryColor:var(--primary),
+    textLight:var(--text-light),
 );
 

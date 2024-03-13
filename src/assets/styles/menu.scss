@@ -1,17 +1,48 @@
 @import 'App';
 
+
+.bgColor {
+  fill: color(bgColor) !important;
+}
+.textColor {
+  fill: color(textColor) !important;
+}
+
+
 header {
     left: 3%;
-    top: 8%;
+    top: 6%;
     position: fixed;
     background: transparent;
     z-index: 99999;
-    .logo {
-        width: 120px;
-        height: auto;
-        g{
-          fill: color(textColor);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+
+    .socialIcon {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: color(textLight);
+        font-size: 26px;
+        padding: 6px 0;
+        i {
+          &:hover {
+            opacity: .8;
+          }
         }
+        
+      }
+    }
+    .logo {
+        width: 90px;
+        height: auto;
       }
       
       
@@ -27,18 +58,17 @@ header {
             padding: 15px 30px;
             margin: 0 3px;
             font-weight: 600;
-            font-size: 22px;
+            font-size: 19px;
             transform: rotate(180deg);
             white-space: nowrap;
             writing-mode: vertical-rl;
             line-height: 1;
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
           &:hover {
             text-decoration: none;
             color: color(textColor);
             &:after {
                 width: 4px;
-                
                 animation:grow 300ms forwards;
                 background-color: color(main);
               }
@@ -49,7 +79,7 @@ header {
             position: absolute;
             width: 0;
             height: 90%;
-            right: 40px;
+            right: 38px;
             top: calc(5% - 4px/2);
             background-color: color(main);
             pointer-events: none;

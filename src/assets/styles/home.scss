@@ -1,0 +1,33 @@
+@import 'App';
+
+.text-container h1{
+    font-family: $font-raleway;
+    font-size: 130px;
+    color: rgba(136, 131, 131, 0.1);
+    background-image: url("https://s31.postimg.cc/yaze1agjv/abstract-background-canvas-249798.jpg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: cover;
+    background-clip:text;
+    animation: animate 18s linear infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  @keyframes animate {
+    0%{
+      background-position: left 0px top 10px;
+    }
+      40%{
+        background-position: left 800px top 10px;
+    }
+  }
+
+  .homePage {
+    // background: red;
+    height: 100vh;
+  }
+
+  
+  
