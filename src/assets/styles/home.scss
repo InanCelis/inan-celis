@@ -30,26 +30,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    // align-self: center;
     // background:red;
 
     .content {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
         .image {
-            width: auto;
+            width: 45%;
             display: flex;
             justify-content: flex-end;
 
             img {
                 width: 100%;
+                // border-bottom: 10px solid color(textColor);
             }
         }
         .details {
-            width: 50%;
+            width: 55%;
             font-style: $font-raleway;
             h6 {
                 text-transform: uppercase;

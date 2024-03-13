@@ -4,13 +4,13 @@ $font-raleway: "Raleway", sans-serif;
 $transition: 0.5s ease background-color, 0.2s ease opacity;
 
 [data-theme="theme-dark"] {
-    --main:#cfad13;
+    --main:#bd883c;
     --bg:#181818;
     --text:snow;
 }
 
 [data-theme="theme-light"] {
-    --main:#cfad13;
+    --main:#bd883c;
     --bg:snow;
     --text:#181818;
 }
