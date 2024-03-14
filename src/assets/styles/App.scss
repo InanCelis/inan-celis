@@ -30,7 +30,9 @@ body {
   color: color(textColor);
   transition: $transition;
 }
-
+.container {
+  padding: 3%;
+}
 
 .bgColor {
   background-color: color(bgColor);
@@ -45,6 +47,71 @@ body {
 
 .textMain {
   color: color(main);
+}
+
+a.in-button-main {
+  text-decoration: none;
+  background-color: color(main);
+  padding:10px 30px;
+  color: color(snowColor) !important;
+  font-family: $font-nunito;
+  font-size: 22px;
+  border-radius: 40px;
+  transition: $transition;
+  // box-shadow: ;
+  &:hover {
+    transform: scale(1.1);
+    opacity: .9;
+  }
+}
+
+
+
+/* CSS */
+.button-52 {
+  font-size: 17px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid color(textColor);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  color: color(snowColor) !important;
+}
+
+.button-52:after {
+  content: "";
+  background-color: color(main);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.4s;
+  text-decoration: none !important;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  // color: unset;
 }
 
 

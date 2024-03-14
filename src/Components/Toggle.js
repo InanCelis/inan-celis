@@ -17,7 +17,10 @@ function Toggle() {
     }
 
     return (
-      <div className="trigger" onClick={handleOnClick}></div>
+      <>
+      <div className="trigger desktop" onClick={handleOnClick}></div>
+      </>
+      
     )
 }
 

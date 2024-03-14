@@ -1,5 +1,6 @@
 @import 'App';
 
+
 .trigger {
   width: 50px;
   height: 50px;
@@ -18,8 +19,36 @@
   top: 6%;
   position: fixed;
   z-index: 99999;
+  display: block;
 }
 
 [data-theme="theme-dark"] .trigger {
   background-image: url('../images/icons/sun.svg');
 }
+
+// .burger-menu {
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 20%;
+//   cursor: pointer;
+//   background: color(textColor);
+//   background-image: url('../images/icons/moon.svg');
+//   background-size: 28px;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   z-index: 1;
+//   transform-style: preserve-3d;
+//   transition: all 0.5s ease-out;
+
+//   right: 3%;
+//   top: 6%;
+//   position: fixed;
+//   z-index: 99999;
+// }
+
+// [trigger-menu="yes"] .burger-menu {
+//   background-image: url('../images/icons/sun.svg');
+// }
+
+
+
