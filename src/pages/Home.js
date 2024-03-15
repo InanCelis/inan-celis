@@ -25,7 +25,6 @@ function Home() {
             <NavLink className="button-52" >Hire me</NavLink>
           </div>
         </div>
-        
       </div>
         
     </Layout>
