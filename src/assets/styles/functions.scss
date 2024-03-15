@@ -2,3 +2,7 @@
 @function color($color-name) {
     @return map-get($colors, $color-name)
 }
+
+@function sizes($size-name) {
+    @return map-get($sizes, $size-name)
+}

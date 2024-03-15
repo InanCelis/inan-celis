@@ -19,6 +19,19 @@ $transition: 0.7s ease background-color, 0.7s ease opacity;
     --primary:#6b6b6b;
     --text-light: color-mix(in lab, var(--text) 60%, transparent);
     --snowColor:snow;
+
+    --fontSizeH0: 6.25rem;
+    --fontSizeH1: 4.375rem;
+    --fontSizeH2: 3.125rem;
+    --fontSizeH3: 3.25rem;
+    --fontSizeH4: 2.625rem;
+    --fontSizeH5: 1.375rem;
+
+    --fontSizeXL: 1.375rem;
+    --fontSizeL: 1.25rem;
+    --fontSizeM: 1.125rem;
+    --fontSizeS: 1rem;
+    --fontSizeXS: 0.875rem;
 }
 
 
@@ -29,6 +42,21 @@ $colors: (
     textColor:var(--text),
     primaryColor:var(--primary),
     textLight:var(--text-light),
-    snowColor:var(--snowColor)
+    snowColor:var(--snowColor),
+);
+
+$sizes: (
+    fontSizeH0:var(--fontSizeH0),
+    fontSizeH1:var(--fontSizeH1),
+    fontSizeH2:var(--fontSizeH2),
+    fontSizeH3:var(--fontSizeH3),
+    fontSizeH4:var(--fontSizeH4),
+    fontSizeH5:var(--fontSizeH5),
+
+    fontSizeXL:var(--fontSizeXL),
+    fontSizeL:var(--fontSizeL),
+    fontSizeM:var(--fontSizeM),
+    fontSizeS:var(--fontSizeS),
+    fontSizeXS:var(--fontSizeXS),
 );
 

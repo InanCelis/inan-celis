@@ -23,20 +23,34 @@ html, #root {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.container {
+  padding: 1.5%;
+}
+
 @media screen and (max-width: 450px) {
   html, #root {
     font-size: 15.5px;
   }
+
+  .container {
+    padding: 0 3%;
+  }
 }
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 0 3%;
+  }
+}
+
+
 body {
   height: 100vh;
   background-color: color(bgColor);
   color: color(textColor);
   transition: $transition;
 }
-.container {
-  padding: 3%;
-}
+
 
 .bgColor {
   background-color: color(bgColor);
@@ -118,9 +132,78 @@ a:hover {
   // color: unset;
 }
 
+.title-0 {
+  font-size: sizes(fontSizeH0);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.title-1 {
+  font-size: sizes(fontSizeH1);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.title-2 {
+  font-size: sizes(fontSizeH2);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.title-3 {
+  font-size: sizes(fontSizeH3);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.title-4 {
+  font-size: sizes(fontSizeH4);
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.title-5 {
+  font-size: sizes(fontSizeH5);
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.f-text-xl {
+  font-size: sizes(fontSizeXL);
+  font-weight: 600;
+}
+.f-text-l {
+  font-size: sizes(fontSizeL);
+  font-weight: 600;
+}
+.f-text-m {
+  font-size: sizes(fontSizeM);
+  font-weight: 500;
+}
+.f-text-s {
+  font-size: sizes(fontSizeS);
+}
+.f-text-xs {
+  font-size: sizes(fontSizeXS);
+}
 
 
 
 
 
+@media screen and (max-width: 780px) {
+  .button-52 {
+    font-size: 16px;
+    padding: 10px 20px 10px;
+  }
+  .title-4 {
+    font-size: 2.1rem;
+  }
+  
+ 
+  .f-text-m {
+    font-size: 1rem;
+  }
+}
 
+
+@media screen and (max-width: 450px) {
+
+
+  
+}

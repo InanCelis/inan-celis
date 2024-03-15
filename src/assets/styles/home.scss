@@ -23,10 +23,44 @@
         background-position: left 800px top 10px;
     }
   }
-
+  .scroll-downs {
+    position: relative;
+    top: 10px;
+    right: 40%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid color(textColor);
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: color(textColor);
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
 
   .homepage {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +70,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
-
+       
         .image {
             width: 45%;
             display: flex;
@@ -98,7 +132,9 @@
   
 
   @media screen and (max-width: 1150px) {
-
+    .scroll-downs {
+        display: none;
+    }
     .homepage {
         .content {
             flex-direction: column;
@@ -110,6 +146,7 @@
             .details {
                 width: 80%;
             }
+            
         }
     }
       
@@ -175,7 +212,7 @@
   @media screen and (max-width: 450px) {
 
     .homepage {
-
+        height: 70vh;
         .content {
             .details {
                 width: 100%;
