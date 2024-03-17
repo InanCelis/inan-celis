@@ -1,0 +1,23 @@
+[
+    { 
+        "id": 1,
+        "company":"Asticom Group of Companies",
+        "description":"A sleek and professional company website showcasing innovative services, built with WordPress and enhanced using Elementor Pro for dynamic functionality.",
+        "link":"#",
+        "image":"asti-laptop.png"
+    },
+    { 
+        "id": 2,
+        "company":"CHAMPIONS CLUB TEXAS",
+        "description":"A casino website created with WordPress and Elementor Pro, delivering captivating design and seamless functionality.",
+        "link":"/about",
+        "image":"asti-laptop.png"
+    },
+    { 
+        "id": 3,
+        "company":"Baby Company",
+        "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
+        "link":"/about",
+        "image":"asti-laptop.png"
+    }
+]

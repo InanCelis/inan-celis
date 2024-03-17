@@ -12,8 +12,6 @@ function About() {
           <h1>Details</h1>
         </div>
       </div>
-
-      {/* <canvas className='connecting-dots'></canvas> */}
     </Layout>
   );
 }

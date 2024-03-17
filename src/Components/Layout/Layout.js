@@ -7,8 +7,6 @@ function Layout({ children }) {
     <>
       <div className="main-container">
           <Menu />
-          {/* <Toggle  setClassName={setClassName} className="w-100"/> */}
-          {/* <div className="burger-menu"></div> */}
           {children}
           <Footer />
       </div>
