@@ -21,7 +21,7 @@ function Home() {
               <h2></h2>
               <p class="text-muted mb-4">
                 Creative web developer and designer - crafting visually stunning, functional websites. 
-                Elevate your brand with bespoke design and innovative technology.
+                Elevate your brand with bespoke design and innovative technologys.
               </p>
               {/* <NavLink className="button-52" >Hire me</NavLink> */}
               
