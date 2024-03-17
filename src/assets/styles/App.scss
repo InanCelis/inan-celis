@@ -86,11 +86,11 @@ a.in-button-main {
 
 
 /* CSS */
-.button-52 {
+.button {
   font-size: 17px;
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 13px 25px 13px;
+  padding: 13px 30px 13px 30px !important;
   outline: 0;
   border: 1px solid color(textColor);
   cursor: pointer;
@@ -100,12 +100,11 @@ a.in-button-main {
   -webkit-user-select: none;
   touch-action: manipulation;
   text-decoration: none;
-  color: color(snowColor) !important;
+  
 }
 
-.button-52:after {
+.button:after {
   content: "";
-  background-color: color(main);
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -115,10 +114,31 @@ a.in-button-main {
   transition: 0.4s;
   text-decoration: none !important;
 }
+.button-52:after {
+  background-color: color(main);
+}
+.button-50:after {
+  background-color: color(textColor);
+  color: color(textColor);
+}
 
-.button-52:hover:after {
+.button-52 {
+  color: color(snowColor);
+}
+.button-50 {
+  color: color(bgColor);
+  font-weight: 500;
+}
+.button:hover:after {
   top: 0px;
   left: 0px;
+}
+
+.button-52:hover {
+  color: color(snowColor);
+}
+.button-50:hover {
+  color: color(bgColor);
 }
 
 @media (min-width: 768px) {
@@ -129,7 +149,7 @@ a.in-button-main {
 
 a:hover {
   text-decoration: none;
-  // color: unset;
+  color: unset;
 }
 
 .title-0 {
@@ -206,4 +226,10 @@ a:hover {
 
 
   
+}
+
+footer {
+  u {
+    text-decoration: underline;
+  }
 }

@@ -8,7 +8,7 @@ function About() {
   return (
     <Layout>
       <div className='container pt-5'>
-        <div class="text-container">
+        <div className="text-container">
           <h1>Details</h1>
         </div>
       </div>

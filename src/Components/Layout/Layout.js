@@ -1,5 +1,6 @@
 import React from "react";
-import Menu from "../Menu"
+import Menu from "../Menu";
+import Footer from "../Footer";
 function Layout({ children }) {
  
   return (
@@ -9,6 +10,7 @@ function Layout({ children }) {
           {/* <Toggle  setClassName={setClassName} className="w-100"/> */}
           {/* <div className="burger-menu"></div> */}
           {children}
+          <Footer />
       </div>
     </>
   );
