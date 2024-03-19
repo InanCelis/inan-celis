@@ -1,9 +1,13 @@
 import React from 'react';
-import Layout from '../Components/Layout/Layout';
+
 import { useHelperFunction } from '../utils/helperFuntion';
-import '../assets/styles/home.scss';
-import Me from '../assets/images/meee.png';
+import { NavLink } from "react-router-dom";
+
+import Layout from '../Components/Layout/Layout';
 import ProjectItem from '../Components/ProjectItem';
+import Me from '../assets/images/meee.png';
+import '../assets/styles/home.scss';
+
 function Home() {
   useHelperFunction('');
   return (
@@ -23,7 +27,7 @@ function Home() {
                 Creative web developer and designer - crafting visually stunning, functional websites. 
                 Elevate your brand with bespoke design and innovative technology.
               </p>
-              {/* <NavLink className="button-52" >Hire me</NavLink> */}
+              {/* <NavLink to={'#'} className="button-50 button" >Download CV &nbsp;<i class="fa-solid fa-download"></i></NavLink> */}
               
             </div>
           </div>
@@ -34,7 +38,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <ProjectItem itemCount={3} viewAll={true} />
+      <div id={'project'}>
+        <ProjectItem itemCount={3} viewAll={true} hasObject={null}/>
+      </div>
+      
     </Layout>
   );
 }

@@ -6,7 +6,7 @@ export function useHelperFunction(title) {
 
   useEffect(() => {
     // chaging page title
-    document.title = `Inan Portfolio ${title}`;
+    document.title = `${title} Inan The Future`;
 
     window.scrollTo(0, 0);
   }, [pathname]);

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../Components/Layout/Layout';
 import { useHelperFunction } from '../utils/helperFuntion';
 function About() {
-  useHelperFunction('| About');
+  useHelperFunction('About |');
 
   
   return (

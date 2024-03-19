@@ -43,9 +43,10 @@ header {
         align-items: center;
         flex-direction: column;
         margin-top: 20px;
-        a{
+        a, div{
             color: color(textColor);
             text-decoration: none;
+            cursor: pointer;
             padding: 15px 30px;
             margin: 0 3px;
             font-weight: 600;
@@ -55,7 +56,7 @@ header {
             writing-mode: vertical-rl;
             line-height: 1;
             letter-spacing: -0.5px;
-          &:hover {
+          &:hover, &:active, &:focus, &:focus-visible,&:focus-within,&:target, &:visited {
             text-decoration: none;
             color: color(textColor);
             &:after {
@@ -273,7 +274,7 @@ header {
           align-items: center;
           flex-direction: column;
 
-          a {
+          a,div {
             color: color(textColor);
             padding: 10px 0;
             width: 100%;

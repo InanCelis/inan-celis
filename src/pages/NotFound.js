@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../Components/Layout/Layout';
 import { useHelperFunction } from '../utils/helperFuntion';
-import '../assets/styles/project.scss';
-import ProjectItem from '../Components/ProjectItem';
 function Project() {
-    useHelperFunction('Project |');
+    useHelperFunction('Page Not Found |');
   return (
     <Layout>
-      <ProjectItem viewAll={false}/>
+      <div className='d-flex justify-content-center hvh-100 align-items-center'>
+        <h2>Page not found.</h2>
+      </div>
     </Layout>
   );
 }
