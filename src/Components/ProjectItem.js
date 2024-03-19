@@ -4,7 +4,7 @@ import '../assets/styles/project.scss';
 
 import LineClipPath from './Slice/LineClipPath';
 import data from '../api/projects.json'
-function ProjectItem({itemCount, viewMore}) {
+function ProjectItem({itemCount, viewAll}) {
     const projects = data.slice(0, itemCount).map((p) =>
         <div className='project container' id='project' key={p.id}>
             <div className='content'>
@@ -26,10 +26,10 @@ function ProjectItem({itemCount, viewMore}) {
   return (
     <>
       {projects}
-      { viewMore ?(
+      { viewAll ?(
         <div className='d-flex justify-content-center pb-5'>
             <NavLink to='#' className="button-50 button" >
-                View more projects &nbsp;<i className="fa-solid fa-arrow-right text-center"></i>
+                View all projects &nbsp;<i className="fa-solid fa-arrow-right text-center"></i>
             </NavLink>
         </div>
         ) : ''}

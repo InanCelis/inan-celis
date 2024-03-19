@@ -34,7 +34,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <ProjectItem itemCount={3} viewMore={true} />
+      <ProjectItem itemCount={3} viewAll={true} />
     </Layout>
   );
 }

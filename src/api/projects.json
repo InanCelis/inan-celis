@@ -11,13 +11,13 @@
         "company":"CHAMPIONS CLUB TEXAS",
         "description":"A casino website created with WordPress and Elementor Pro, delivering captivating design and seamless functionality.",
         "link":"/about",
-        "image":"asti-laptop.png"
+        "image":"championsclub-laptop.png"
     },
     { 
         "id": 3,
         "company":"Baby Company",
         "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
         "link":"/about",
-        "image":"asti-laptop.png"
+        "image":"baby-company-laptop.png"
     }
 ]

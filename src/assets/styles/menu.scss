@@ -59,9 +59,10 @@ header {
             text-decoration: none;
             color: color(textColor);
             &:after {
-                width: 4px;
+                width: 30px;
                 animation:grow 300ms forwards;
-                background-color: color(main);
+                // background-color: color(main);
+                border: 2px solid color(main);
               }
           }
 
@@ -70,9 +71,9 @@ header {
             position: absolute;
             width: 0;
             height: 90%;
-            right: 38px;
-            top: calc(5% - 4px/2);
-            background-color: color(main);
+            right: 25px;
+            top: calc(5% - 1px/2);
+            // background-color: color(main);
             pointer-events: none;
           }
           
@@ -80,7 +81,8 @@ header {
       
         .active {
           &:after {
-            width: 4px;
+            width: 30px;
+            border: 2px solid color(main);
           }
       }
     }
