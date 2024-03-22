@@ -1,10 +1,5 @@
 @import 'App';
 
-
-  
-
-
-
 .project {
     height: 100vh;
     display: flex;
@@ -29,31 +24,98 @@
         }
     }
 }
+
+
+.project-item-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+	position: absolute;
+    background-position: top right;
+	opacity: 8%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.project-item-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px !important;
+    .details {
+        width: 60%;
+        font-style: $font-raleway;
+        p{
+            padding: 15px 0;
+        }
+        .link {
+            color: color(main);
+            font-size: sizes(fontSizeM);
+            background: linear-gradient(to left, transparent 50%, color(textColor) 50%) right;
+            background-size: 205%;
+            transition: .3s ease-out;
+            padding: 10px;
+            font-weight: 500;
+            &:hover {  
+                background-position: left;
+                color: color(bgColor);
+            }
+            i {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .tools {
+        width: 40%;
+        margin-left: 1.8rem;
+
+        div {
+            padding: 20px 0;
+            font-size: sizes(fontSizeS);
+            font-weight: 300;
+            // color: color(primaryColor);
+            border-top: 1px solid color-mix(in lab, color(textColor) 20%, transparent);
+            &:last-child {
+                border-bottom: 1px solid color-mix(in lab, color(textColor) 20%, transparent);
+            }
+        }
+        
+
+    }
+
+}
 @media screen and (max-width: 1333px) {
     .project {
-    
         .content {
-            
             .details {
                 width: 45%;
                 font-style: $font-raleway;
                 padding-left: 5rem;
             }
-    
             .image {
                 width: 55%;
             }
         }
-    }
+    }   
+}
 
+@media screen and (max-width: 1199px) {
+    .project-item-content {
+        .details {
+            width: 70%;
+        }
     
+        .tools {
+            width: 30%;
+        }
+    }
 }
 
 
 @media screen and (max-width: 1120px) {
 
     .project {
-    
         .content {
             // flex-direction: column;
             flex-direction: column-reverse;
@@ -79,15 +141,36 @@
 @media screen and (max-width: 780px) {
 
     .project {
-    
         .content {
             .details {
                 padding-top: 4rem;
                 width: 100%;
             }
-    
             .image {
                 width: 70%;
+            }
+        }
+    }
+
+    .project-item-content {
+        padding-top: 150px !important;
+        flex-direction: column;
+        .details {
+            width: 100%;
+            
+            .link {
+                color: color(bgColor);
+                font-size: sizes(fontSizeS);
+                background-position: left;
+            }
+        }
+    
+        .tools {
+            width: 100%;
+            margin-left: 0;
+            padding-top: 40px;
+            div {
+                font-size: sizes(fontSizeXS);
             }
         }
     }
@@ -95,15 +178,11 @@
 
 
 @media screen and (max-width: 470px) {
-
     .project {
-    
         .content {
-    
             .image {
                 width: 100%;
             }
         }
     }
-    
 }
