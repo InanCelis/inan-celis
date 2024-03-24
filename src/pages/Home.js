@@ -1,17 +1,17 @@
 import React from 'react';
 
 import { useHelperFunction } from '../utils/helperFuntion';
-import { NavLink } from "react-router-dom";
 
 import Layout from '../Components/Layout/Layout';
 import ProjectItem from '../Components/ProjectItem';
 import Me from '../assets/images/meee.png';
 import '../assets/styles/home.scss';
-
+import ParticleBackground from '../Components/ParticleBackground';
 function Home() {
   useHelperFunction('');
   return (
     <Layout>
+      <ParticleBackground />
       <div className='container'>
         <div className='homepage'>
           <div className='content'>

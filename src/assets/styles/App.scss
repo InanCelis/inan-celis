@@ -200,6 +200,23 @@ a:hover {
   font-size: sizes(fontSizeXS);
 }
 
+.line-small._index_1cfqm_192 {
+    margin-bottom: 0 !important;
+    align-items: start;
+    ._divider_ucnqf_2 {
+      position: relative;
+      width: 85%;
+
+      ._notch_ucnqf_30 {
+        clip-path: polygon(0 -1px,80% -1px,calc(80% - 10px) 80%,10px 80%);
+        width: 70px;
+      }
+    }
+    ._indexNumber_1cfqm_201 {
+      font-size: .9rem;
+      line-height: .8;
+    }
+}
 
 ._index_1cfqm_192 {
   position: relative;

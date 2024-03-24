@@ -32,6 +32,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-self: center;
+
+    .badge-project {
+        color: color(bgColor);
+        background-color: color(textColor);
+        letter-spacing: 1.8px;
+    }
     .link {
         color: color(main);
         font-size: sizes(fontSizeS);
@@ -62,7 +68,14 @@
     top: 0;
     z-index: -1;
 }
-
+.card-link {
+    &:hover {
+        .link {
+            background-position: left;
+            color: color(bgColor);
+        }
+    }
+}
 .project-item-content {
     display: flex;
     justify-content: center;
@@ -196,6 +209,14 @@
             div {
                 font-size: sizes(fontSizeXS);
             }
+        }
+    }
+
+    .project-card {
+        .link {
+            color: color(bgColor);
+            font-size: sizes(fontSizeXS);
+            background-position: left;
         }
     }
 }

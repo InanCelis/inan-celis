@@ -1,5 +1,14 @@
 @import 'App';
-
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    // z-index: -1;
+    // background-color: #000; /* Dark background for better visibility */
+  }
 .text-container h1{
     font-family: $font-nunito;
     font-size: 130px;
@@ -64,7 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     .content {
         display: flex;
         flex-direction: row;

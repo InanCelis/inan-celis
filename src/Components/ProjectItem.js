@@ -31,13 +31,13 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
     const otherProjects = data.slice(3, itemCount).map((p, index) =>{
         return (
             <div class="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index}>
-                <NavLink to={`/project/${p.url}`}>
+                <NavLink to={`/project/${p.url}`} className='card-link'>
                     <div class="card bgColor p-3 mb-2 shadow project-card h-100">
                         <div class="d-flex justify-content-between">
-                            <h6 class="mb-0">Mailchimp</h6>
-                            <div class="badge"> <span className='text-capitalize'>{p.type}</span> </div>
+                            <div class="badge badge-project"> <span className='text-capitalize'>{p.type}</span> </div>
+                            <LineClipPath content={`0${p.id}`} xtraClass={'line-small'}/>
                         </div>
-                        <div class="mt-5">
+                        <div class="mt-4">
                             <h3>{p.company}</h3>
                             <div class="mt-3"><span class="text-muted">{p.description}</span> </div>
                         </div>
