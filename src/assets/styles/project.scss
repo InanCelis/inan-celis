@@ -24,7 +24,32 @@
         }
     }
 }
-
+.project-card {
+    border: 1px solid color(main);
+    text-decoration: none;
+    color: color(textColor) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    .link {
+        color: color(main);
+        font-size: sizes(fontSizeS);
+        background: linear-gradient(to left, transparent 50%, color(textColor) 50%) right;
+        background-size: 201%;
+        transition: .3s ease-out;
+        padding: 10px;
+        font-weight: 500;
+        margin-top: 10px;
+        &:hover {  
+            background-position: left;
+            color: color(bgColor);
+        }
+        i {
+            padding-right: 10px;
+        }
+    }
+}
 
 .project-item-bg {
     background-size: cover;
@@ -74,7 +99,6 @@
             padding: 20px 0;
             font-size: sizes(fontSizeS);
             font-weight: 300;
-            // color: color(primaryColor);
             border-top: 1px solid color-mix(in lab, color(textColor) 20%, transparent);
             &:last-child {
                 border-bottom: 1px solid color-mix(in lab, color(textColor) 20%, transparent);

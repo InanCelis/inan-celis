@@ -14,7 +14,8 @@
             "JavaScript / JQuery",
             "WordPress / Elementor Pro",
             "PHP"
-        ]
+        ],
+        "type":"WordPress"
     },
     { 
         "id": 2,
@@ -31,7 +32,8 @@
             "JavaScript / JQuery",
             "WordPress / Elementor Pro",
             "PHP"
-        ]
+        ],
+        "type":"WordPress"
     },
     { 
         "id": 3,
@@ -46,6 +48,79 @@
             "HTML",
             "CSS",
             "JavaScript / JQuery"
-        ]
+        ],
+        "type":"psd to html"
+    }, 
+    { 
+        "id": 4,
+        "url": "acquiro-website",
+        "company":"Aquiro Website",
+        "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
+        "website":"https://www.acquiro.com.ph/",
+        "image":"baby-company-laptop.png",
+        "imageBg": "baby-company-bg.png",
+        "responsibilities":"I served as the main developer in transforming this website, aiming to overhaul the previous version into a completely refreshed design that aligns with the company's new branding. The layout, crafted by our marketing and UI/UX teams, was then turned into a functional website by me.",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript / JQuery",
+            "WordPress / Elementor Pro",
+            "PHP"
+        ],
+        "type":"WordPress"
+    },
+    { 
+        "id": 5,
+        "url": "absi-website",
+        "company":"ABSI Website",
+        "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
+        "website":"https://absi.ph/",
+        "image":"baby-company-laptop.png",
+        "imageBg": "baby-company-bg.png",
+        "responsibilities":"I served as the main developer in transforming this website, aiming to overhaul the previous version into a completely refreshed design that aligns with the company's new branding. The layout, crafted by our marketing and UI/UX teams, was then turned into a functional website by me.",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript / JQuery",
+            "WordPress / Elementor Pro",
+            "PHP"
+        ],
+        "type":"WordPress"
+    },
+    { 
+        "id": 6,
+        "url": "finsi-website",
+        "company":"Finsi Website",
+        "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
+        "website":"https://www.finsi.com.ph/",
+        "image":"baby-company-laptop.png",
+        "imageBg": "baby-company-bg.png",
+        "responsibilities":"I served as the main developer in transforming this website, aiming to overhaul the previous version into a completely refreshed design that aligns with the company's new branding. The layout, crafted by our marketing and UI/UX teams, was then turned into a functional website by me.",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript / JQuery",
+            "WordPress / Elementor Pro",
+            "PHP"
+        ],
+        "type":"WordPress"
+    },
+    
+    { 
+        "id": 7,
+        "url": "rajtheone",
+        "company":"Rajtheone",
+        "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
+        "website":"https://rajtheone.com/",
+        "image":"baby-company-laptop.png",
+        "imageBg": "baby-company-bg.png",
+        "responsibilities":"I served as the main developer in transforming this website, aiming to overhaul the previous version into a completely refreshed design that aligns with the company's new branding. The layout, crafted by our marketing and UI/UX teams, was then turned into a functional website by me.",
+        "tools": [
+            "HTML",
+            "CSS / SASS",
+            "JavaScript / JQuery",
+            "PHP / Laravel Framework"
+        ],
+        "type":"Laravel"
     }
 ]

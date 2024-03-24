@@ -39,7 +39,7 @@ function Home() {
         </div>
       </div>
       <div id={'project'}>
-        <ProjectItem itemCount={3} viewAll={true} hasObject={null}/>
+        <ProjectItem itemCount={3} viewAll={true} hasObject={null} otherItem={false}/>
       </div>
       
     </Layout>

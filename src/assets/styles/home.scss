@@ -105,19 +105,33 @@
                 letter-spacing: 0.4em;
                 font-weight: 400;
                 font-size: 3.5em;
-                color: snow;
+                color: color(textColor);
             }
 
             h2::after {
                 content:"Developer";
-                animation: changeText 8s infinite;
-                background-color: color(main);
-                pointer-events: none;
+                animation: changeText 7s infinite;
+                // background-color: color(main);
+                // pointer-events: none;
                 padding: 5px 10px;
+                background: linear-gradient(to left, transparent 50%, color(main) 50%) right;
+                background-size: 0;
             }
             @keyframes changeText {
-                75% {
+                50% {
                     content:"+Designer";
+                    background-size: 205%;
+                    background-position: left;
+                }
+                70% {
+                    content:"Dev";
+                    background-size: 80%;
+                    background-position: left;
+                }
+                100% {
+                    content:"Developer";
+                    background-size: 205%;
+                    background-position: left;
                 }
             }
 

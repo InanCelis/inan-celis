@@ -7,7 +7,7 @@ function Project() {
     useHelperFunction('Project |');
   return (
     <Layout>
-      <ProjectItem viewAll={false}/>
+      <ProjectItem viewAll={false} otherItem={true}/>
     </Layout>
   );
 }
