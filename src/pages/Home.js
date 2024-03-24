@@ -11,7 +11,9 @@ function Home() {
   useHelperFunction('');
   return (
     <Layout>
-      <ParticleBackground />
+      <div className='d-none d-md-block'>
+        <ParticleBackground/>
+      </div>
       <div className='container'>
         <div className='homepage'>
           <div className='content'>
