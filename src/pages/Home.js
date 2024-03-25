@@ -6,13 +6,13 @@ import Layout from '../Components/Layout/Layout';
 import ProjectItem from '../Components/ProjectItem';
 import Me from '../assets/images/meee.png';
 import '../assets/styles/home.scss';
-import ParticleBackground from '../Components/ParticleBackground';
+import RainbowSwirl from '../Components/RainbowSwirl';
 function Home() {
   useHelperFunction('');
   return (
     <Layout>
       <div className='d-none d-md-block'>
-        <ParticleBackground/>
+        <RainbowSwirl/>
       </div>
       <div className='container'>
         <div className='homepage'>

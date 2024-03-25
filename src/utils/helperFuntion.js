@@ -6,7 +6,7 @@ export function useHelperFunction(title) {
 
   useEffect(() => {
     // chaging page title
-    if(title != 'nothing'){
+    if(title !== 'nothing'){
       document.title = `${title} Inan The Future`;
     }
 
