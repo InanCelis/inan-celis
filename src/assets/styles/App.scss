@@ -194,7 +194,7 @@ a:hover {
   font-weight: 500;
 }
 .f-text-s {
-  font-size: sizes(fontSizeS);
+  font-size: sizes(fontSizeS) !important;
 }
 .f-text-xs {
   font-size: sizes(fontSizeXS);
@@ -262,6 +262,9 @@ a:hover {
 .hvh-100 {
   height: 100vh;
 }
+.margin-top-big {
+  margin-top: 15rem;
+}
 
 @media screen and (max-width: 780px) {
   // .button-52 {
@@ -299,5 +302,32 @@ footer {
   u {
     text-decoration: underline;
     font-weight: 500;
+  }
+}
+
+
+.link {
+  color: color(main);
+  font-size: sizes(fontSizeS);
+  background: linear-gradient(to left, transparent 50%, color(textColor) 50%) right;
+  background-size: 201%;
+  transition: .3s ease-out;
+  padding: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+  &:hover {  
+      background-position: left;
+      color: color(bgColor);
+  }
+  i {
+      padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .link {
+      color: color(bgColor);
+      font-size: sizes(fontSizeXS);
+      background-position: left;
   }
 }

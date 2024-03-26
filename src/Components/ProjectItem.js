@@ -1,6 +1,6 @@
 // import React, useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import '../assets/styles/project.scss';
+// import '../assets/styles/project.scss';
 
 import LineClipPath from './Slice/LineClipPath';
 import data from '../api/projects.json';

@@ -1,6 +1,4 @@
-import React from 'react';
-
-function LineClipPath({content, xtraClass}) {
+function LineClipPath({content, xtraClass, textClass}) {
   
     
     return (
@@ -9,7 +7,7 @@ function LineClipPath({content, xtraClass}) {
                 <div className="_line_ucnqf_8" data-collapsed="false"></div>
                 <div className="_notch_ucnqf_30" data-collapsed="false" ></div>
             </div>
-            <span className="_indexNumber_1cfqm_201">{content}</span>
+            <span className={`_indexNumber_1cfqm_201 ${textClass ? textClass : ''}`}>{content}</span>
         </div>
     )
 }

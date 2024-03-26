@@ -1,15 +1,16 @@
 import React from 'react';
 import Layout from '../Components/Layout/Layout';
 import { useHelperFunction } from '../utils/helperFuntion';
+import Details from '../Components/Details';
 function About() {
-  useHelperFunction('About |');
+  useHelperFunction('Details |');
 
   
   return (
     <Layout>
       <div className='container pt-5'>
         <div className="text-container">
-          <h1>Details</h1>
+          <Details />
         </div>
       </div>
     </Layout>

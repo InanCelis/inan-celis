@@ -1,0 +1,60 @@
+@import 'App';
+
+.details-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        display: flex;
+        align-items: start;
+        
+        .details {
+            width: 50%;
+            font-style: $font-raleway;
+        }
+
+        .image {
+            width: 50%;
+            margin-top: 10rem;
+            padding-left: 3rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1333px) {
+    .details-about {
+        .content {
+            .details {
+                padding-left: 5rem;
+            }
+            .image {
+                width: 55%;
+            }
+        }
+    }   
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .details-about {
+        .content {
+            // flex-direction: column;
+            flex-direction: column-reverse;
+            .details {
+                width: 100%;
+                padding-left: 0;
+            }
+            .image {
+                margin: 5rem 0 2rem 0;
+                padding-left:0;
+                width: 100%;
+            }
+        }
+    }
+    
+}

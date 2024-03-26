@@ -1,5 +1,4 @@
 import React from 'react';
-import './assets/styles/App.scss';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import ReactDOM from "react-dom";
