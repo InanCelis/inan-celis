@@ -9,15 +9,15 @@ function Details() {
                 <div className={`details`}>
                     <h3 className='font-weight-bold pb-3'>Hello there</h3>
                     <p className="text-muted mb-4  f-text-m">
-                    Hello! I'm a passionate web developer with a flair for crafting intuitive and 
-                    engaging digital experiences. With expertise in HTML, CSS, JavaScript, and a 
-                    love for exploring the latest in React and Node.js, I continuously strive to 
-                    push the boundaries of web development. My portfolio showcases a variety of 
-                    projects, from sleek corporate websites to dynamic web applications. <br/><br/>When I'm 
-                    not coding, you'll find me surrounded by my pets. As an avid animal lover, 
-                    I believe in the comforting companionship they provide. This unique blend of 
-                    technical skill and empathy enriches my approach to problem-solving and teamwork,
-                    making me a versatile and compassionate developer.
+                        I'm a dedicated web developer with a deep passion 
+                        for frontend technologies. My journey in web development 
+                        started with a fascination for creating intuitive and engaging 
+                        user interfaces. Over the years, I've honed my skills in HTML, 
+                        CSS, JavaScript, and frameworks like React, WordPress, Laravel always aiming 
+                        to deliver seamless web experiences. <br/><br/>Beyond coding, my life is enriched by my 
+                        love for pets. Whether it's a break for a play or simply having a furry 
+                        friend by my side while I code, they remind me of the importance of 
+                        balance and empathy, qualities I bring into my development projects.
                     </p>
                     <NavLink target={"_blank"} to={`#`} className="link" >
                     <i class="fa-regular fa-paper-plane"></i> <span>Send Message</span>
