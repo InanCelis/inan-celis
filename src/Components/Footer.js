@@ -1,6 +1,6 @@
 function Footer() {
     return (
-      <footer className='d-flex justify-content-center p-5 h-100'>
+      <footer className='justify-content-center'>
         <div>© {(new Date().getFullYear())} Inan Celis. <u>Crafted by yours truly</u></div>
       </footer>
       

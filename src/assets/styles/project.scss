@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     .content {
         display: flex;
         align-items: center;
@@ -38,23 +38,6 @@
         background-color: color(textColor);
         letter-spacing: 1.8px;
     }
-    .link {
-        color: color(main);
-        font-size: sizes(fontSizeS);
-        background: linear-gradient(to left, transparent 50%, color(textColor) 50%) right;
-        background-size: 201%;
-        transition: .3s ease-out;
-        padding: 10px;
-        font-weight: 500;
-        margin-top: 10px;
-        &:hover {  
-            background-position: left;
-            color: color(bgColor);
-        }
-        i {
-            padding-right: 10px;
-        }
-    }
 }
 
 .project-item-bg {
@@ -71,8 +54,8 @@
 .card-link {
     &:hover {
         .link {
-            background-position: left;
             color: color(bgColor);
+            --p: 100%;
         }
     }
 }
@@ -87,20 +70,8 @@
             padding: 15px 0;
         }
         .link {
-            color: color(main);
             font-size: sizes(fontSizeM);
-            background: linear-gradient(to left, transparent 50%, color(textColor) 50%) right;
-            background-size: 205%;
-            transition: .3s ease-out;
-            padding: 10px;
-            font-weight: 500;
-            &:hover {  
-                background-position: left;
-                color: color(bgColor);
-            }
-            i {
-                padding-right: 15px;
-            }
+            
         }
     }
 
@@ -154,7 +125,6 @@
 
     .project {
         .content {
-            // flex-direction: column;
             flex-direction: column-reverse;
             .details {
                 padding-top: 5rem;
@@ -194,12 +164,6 @@
         flex-direction: column;
         .details {
             width: 100%;
-            
-            .link {
-                color: color(bgColor);
-                font-size: sizes(fontSizeS);
-                background-position: left;
-            }
         }
     
         .tools {
@@ -212,15 +176,16 @@
         }
     }
 
-    .project-card {
-        .link {
-            color: color(bgColor);
-            font-size: sizes(fontSizeXS);
-            background-position: left;
+}
+
+@media screen and (max-width: 575px) {
+    .project-row {
+        margin: 0;
+        .col-md-6 {
+            padding: 0;
         }
     }
 }
-
 
 @media screen and (max-width: 470px) {
     .project {

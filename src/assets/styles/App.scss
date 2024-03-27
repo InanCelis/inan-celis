@@ -23,6 +23,10 @@ html, #root {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.main-container {
+  margin-bottom: 6rem;
+}
 .container {
   padding: 1.5%;
 }
@@ -262,6 +266,21 @@ a:hover {
 .hvh-100 {
   height: 100vh;
 }
+.hvh-90 {
+  height: 90vh;
+}
+.hvh-80 {
+  height: 90vh;
+}
+.hvh-70 {
+  height: 70vh;
+}
+.hvh-60 {
+  height: 60vh;
+}
+.hvh-50 {
+  height: 50vh;
+}
 .margin-top-big {
   margin-top: 15rem;
 }
@@ -299,6 +318,7 @@ a:hover {
 
 footer {
   text-align: center;
+  padding: 0 3% 4rem 3%;
   u {
     text-decoration: underline;
     font-weight: 500;
@@ -309,14 +329,11 @@ footer {
 .link {
   color: color(main);
   font-size: sizes(fontSizeS);
-  background: linear-gradient(to left, transparent 50%, color(textColor) 50%) right;
-  background-size: 201%;
-  transition: .3s ease-out;
   padding: 10px;
-  font-weight: 500;
-  margin-top: 10px;
+  background: linear-gradient(color(textColor) 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  transition: 0.3s, background-position 0s;
   &:hover {  
-      background-position: left;
+      --p: 100%;
       color: color(bgColor);
   }
   i {
@@ -328,6 +345,47 @@ footer {
   .link {
       color: color(bgColor);
       font-size: sizes(fontSizeXS);
-      background-position: left;
+      --p: 100%;
   }
+}
+
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      font-size: 6em;
+      margin-bottom: 0;
+  }
+  p {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .not-found {
+  
+    p {
+      padding: 0 10%;
+    }
+  }
+
+  
+}
+
+@media screen and (max-width: 500px) {
+  .not-found {
+  
+    p {
+      padding: 0 0;
+    }
+  }
+
+  
 }

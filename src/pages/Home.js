@@ -13,7 +13,7 @@ function Home() {
   return (
     <Layout>
       <div className='d-none d-md-block'>
-        <RainbowSwirl/>
+        <RainbowSwirl position={'Absolute'}/>
       </div>
       <div className='container'>
         <HomeIntro photo={Me}/>

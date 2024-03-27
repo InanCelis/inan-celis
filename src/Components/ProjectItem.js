@@ -58,7 +58,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
         {otherItem ?(
             <div className='container pt-5'>
                 <h4 className='f-text-m'>Other Projects</h4>
-                <div class="row">
+                <div class="row project-row">
                     {otherProjects}
                 </div>
             </div>

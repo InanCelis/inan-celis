@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const RainbowSwirl = () => {
+const RainbowSwirl = ({position}) => {
     const canvasRef = useRef(null);
     let requestId;
     
@@ -64,7 +64,7 @@ const RainbowSwirl = () => {
         };
     }, []);
 
-    return <canvas ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, zIndex: -1 }} />;
+    return <canvas ref={canvasRef} style={{ position: `${position}`, top: 0, left: 0, zIndex: -1 }} />;
 };
 
 export default RainbowSwirl;
