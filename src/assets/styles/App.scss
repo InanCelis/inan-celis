@@ -355,6 +355,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 
   h1 {
       text-transform: uppercase;
@@ -362,6 +363,7 @@ footer {
       font-weight: 600;
       font-size: 6em;
       margin-bottom: 0;
+      color: color(main);
   }
   p {
     padding: 0 20%;
