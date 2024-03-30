@@ -7,7 +7,7 @@
   border-radius: 20%;
   cursor: pointer;
   background: color(textColor);
-  background-image: url('../images/icons/moon.svg');
+  background-image: url('../images/icons/sun.svg');
   background-size: 28px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 }
 
 [data-theme="theme-dark"] .trigger {
-  background-image: url('../images/icons/sun.svg');
+  background-image: url('../images/icons/moon.svg');
 }
 
 // .burger-menu {
