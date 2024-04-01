@@ -19,7 +19,7 @@ function Details() {
                         friend by my side while I code, they remind me of the importance of 
                         balance and empathy, qualities I bring into my development projects.
                     </p>
-                    <NavLink target={"_blank"} to={`#`} className="link" >
+                    <NavLink to={`/contact`} className="link" >
                     <i class="fa-regular fa-paper-plane"></i> <span>Send Message</span>
                     </NavLink>
                 </div>
