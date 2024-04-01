@@ -6,6 +6,7 @@ import About from './pages/About';
 import Project from './pages/Project';
 import ProjectView from "./pages/ProjectView";
 import NotFound from "./pages/NotFound";
+import Contact from "./pages/Contact";
 function App() {
   return (
       <HashRouter>
@@ -18,6 +19,7 @@ function App() {
               <Route exact path='/project/:id' element={<ProjectView/>}/>
             </Route>
             <Route exact path='/about' element={<About/>}/>
+            <Route exact path='/contact' element={<Contact/>}/>
           </Routes>
         </Fragment>
       </HashRouter>

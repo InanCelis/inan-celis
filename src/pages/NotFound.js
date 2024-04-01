@@ -10,9 +10,9 @@ function Project() {
       <RainbowSwirl position={'fixed'}/>
       <div className='container text-center hvh-80 align-items-center not-found'>
         <h1 className='pb-2'>404</h1>
-        <h2 className='pb-1'>Page not found.</h2>
-        <p className="f-text-m text-muted">This page could not be found. It either doesn’t exist or was deleted. Or perhaps you don’t exist and this webpage couldn’t find you.</p>
-        <NavLink target={"_blank"} to={`/`} className="link" >
+        <h2 className='pb-1'>This Page Must Have Taken a Coffee Break.</h2>
+        <p className="f-text-m text-muted">Like a good code, you’ve discovered something that's currently not here. Maybe it's refining its skills or learning a new language. Let's navigate back to where all successful projects are displayed.🌴</p>
+        <NavLink to={`/`} className="link" >
         <i class="fa-solid fa-chevron-right"></i> <span>Back to homepage</span>
         </NavLink>
       </div>

@@ -1,0 +1,246 @@
+@import 'App';
+$base: color(main);
+$text: #555;
+$invalid: #e91e63;
+$width: 400px;
+$cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form-container {
+    margin-bottom: 40px;
+    position: relative;
+    width: 60%;
+}
+  
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    transform: translateY(-50%);
+    color: color(textColor);
+  
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 50%;
+      width: 100%;
+      left: 0;
+      z-index: -1;
+    }
+  
+    &:before {
+    //   background: #ecf0f1;
+      top: 0;
+    }
+  
+    &:after {
+      background: #fff;
+      bottom: 0;
+    }
+  }
+  
+
+  
+
+  
+  /* form starting stylings*/
+  
+  .group {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  
+  .form-input {
+    background: transparent;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: color(textColor);
+    border-bottom: 2px solid #6c757d;
+    box-shadow: inset 0 -2px 0 0 var(--inputUnderlineColor);
+  }
+  
+  .form-input:focus {
+    outline: none;
+  }
+  
+  /* LABEL */
+  
+  label {
+    color: color(textColor);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.25s ease all;
+  }
+  
+  /* active state */
+
+  .form-input:focus ~ label,
+  .form-input:valid ~ label,
+  input[type="email"]:focus ~ label, 
+  input[type="email"]:valid ~ label,
+  input[type="email"]:not(:placeholder-shown) ~ label, 
+  textarea:not(placeholder-shown) ~ label,
+  textarea:focus-within ~ label{
+    top: -20px;
+    font-size: 14px;
+    opacity: .8;
+    color: #6c757d;
+  }
+
+
+
+  textarea:placeholder-shown ~ label, 
+  textarea:placeholder-shown:focus ~ label {
+    top: -10px !important;
+    font-size: 18px !important;
+    color: color(textColor) !important;
+    // background-color: #f0f0f0;
+  }
+
+
+  
+  /* BOTTOM BARS */
+  
+  .bar {
+    position: relative;
+    display: block;
+    width: 50%;
+  }
+  
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    // bottom: 1px;
+    position: absolute;
+    background: color(textColor);
+    transition: 0.2s ease all;
+  }
+  
+  .bar:before {
+    left: 100%;
+  }
+  
+  .bar:after {
+    right: 0%;
+  }
+  
+  /* active state */
+  
+  .form-input:focus ~ .bar:before,
+  .form-input:focus ~ .bar:after{
+    width: 100%;
+  }
+  
+  /* HIGHLIGHTER */
+  
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* active state */
+  
+  .form-input:focus ~ .highlight{
+    animation: inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS */
+  
+  @keyframes inputHighlighter {
+    from {
+      background: color(main);
+    }
+    to {
+      width: 0;
+    //   background: transparent;
+    }
+  }
+  
+  input[type="email"] {
+   & ~ span.validation-text {
+    //   position: absolute;
+      visibility: hidden;
+      font-family: "roboto", sans-serif;
+    //   font-size: 0.6em;
+      width: $width;
+    //   margin-left: 25px;
+      margin-top: -5px;
+      color: white;
+      transition: color 0.3s ease-in-out;
+    }
+    &:not([value=""]) {
+      &::-webkit-input-placeholder {
+        font-size: 0.8em;
+        // transform: translateY(-20px);
+        visibility: visible !important;
+        opacity: 1;
+      }
+      &:focus::-webkit-input-placeholder {
+        color: $base;
+      }
+      &:focus:not(:valid)::-webkit-input-placeholder {
+        color: $invalid;
+      }
+    }
+    &:focus {
+      background-position: 0 0;
+      &:not(:valid):not([value=""]) {
+        border-bottom: solid 2px $invalid;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 96%,
+          $invalid 4%
+        );
+        // visibility: hidden;
+      }
+    }
+    &:not(:focus):not(:valid):not([value=""]) {
+      &::-webkit-input-placeholder {
+        color: $invalid;
+      }
+      border-bottom: solid 1px $invalid;
+      background-position: 0 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 96%,
+        $invalid 4%
+      );
+      & ~ span.validation-text {
+        visibility: visible;
+        color: $invalid;
+      }
+    }
+  }
+
+
+
+
+@media screen and (max-width: 991px) {
+    .form-container {
+        width: 100%;
+    }
+}
