@@ -25,7 +25,7 @@ function Contact() {
         emailjs.sendForm('service_ptae8fe', 'template_gq5izz6', form.current, 'w-rjpWx0cbWeWkXV6')
         .then((result) => {
             resetForm();
-            setAlert({message: 'Email Sent Successfully', type: 'success', isVisible: true});
+            setAlert({message: `Message has been delivered successfully. Please hold on for Inan's response.`, type: 'success', isVisible: true});
         }, (error) => {
             setAlert({message: 'Failed to send the message.', type: 'error', isVisible: true});
         });
@@ -89,7 +89,33 @@ function Contact() {
                         
                         <button type="submit" className="link link-full" ><i class="fa-solid fa-chevron-right"></i> Send Message</button>
                     </form>
+                    <div className='other-contact'>
+                        <h4 className='f-text-m pb-2'>Other Contact info</h4>
+                        <div className='item-border'>
+                            <div>  
+                               <strong className='font-weight-bold text-muted f-text-s'>Address </strong>
+                               <span>Lilian st. Brgy. Bulihan Famy, Laguna Philippines</span>
+                            </div> 
+                            <div>  
+                               <strong className='font-weight-bold text-muted f-text-s'>Email</strong>
+                               <span>celisinan@gmail.com</span>
+                            </div> 
+                            <div>  
+                                <strong className='font-weight-bold text-muted f-text-s'>Mobile Number</strong>
+                               <span>(+63) 938 0386 385 <br />(+63) 992 3019 995 </span>  
+                            </div>  
+                            <div>  
+                                <strong className='font-weight-bold text-muted f-text-s'>Websites</strong>
+                               <span>
+                                    version 2.0 - <a href="https://inancelis.github.io/" target='_blank'>inancelis.github.io</a>
+                                    <br />
+                                    version 1.0 - <a href="https://inan-celis.surge.sh/" target='_blank'>inan-celis.surge.sh</a>
+                                </span>  
+                            </div>  
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </Layout>
     );

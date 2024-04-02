@@ -334,7 +334,7 @@ footer {
 .link {
   color: color(main);
   font-size: sizes(fontSizeS);
-  padding: 10px;
+  padding: 10px 18px;
   font-weight: 500;
   background: linear-gradient(color(textColor) 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
   transition: 0.3s, background-position 0s;
@@ -405,6 +405,27 @@ footer {
       padding: 0 0;
     }
   }
+}
 
-  
+
+.item-border {
+  width: 100%;
+  font-family: $font-nunito;
+  div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 0;
+      font-size: sizes(fontSizeS);
+      font-weight: 300;
+      border-top: 1px solid color-mix(in lab, color(textColor) 20%, transparent);
+      &:last-child {
+          border-bottom: 1px solid color-mix(in lab, color(textColor) 20%, transparent);
+      }
+
+      span {
+        text-align: left;
+        width: 65%;
+      }
+  }
 }
