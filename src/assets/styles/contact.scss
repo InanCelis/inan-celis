@@ -1,21 +1,19 @@
 @import 'App';
 $base: color(main);
-$text: #555;
 $invalid: #e91e63;
 $width: 400px;
-$cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
 
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 .form-container {
     margin-bottom: 40px;
     position: relative;
-    width: 60%;
+    width: 50%;
 }
   
 .form-label {
@@ -44,7 +42,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     }
   
     &:after {
-      background: #fff;
+      // background: #fff;
       bottom: 0;
     }
   }
@@ -68,8 +66,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     width: 100%;
     border: none;
     color: color(textColor);
-    border-bottom: 2px solid #6c757d;
-    box-shadow: inset 0 -2px 0 0 var(--inputUnderlineColor);
+    border-bottom: 1px solid #6c757d;
   }
   
   .form-input:focus {
@@ -86,7 +83,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     pointer-events: none;
     left: 5px;
     top: 10px;
-    transition: 0.25s ease all;
+    transition: 0.3s ease all;
   }
   
   /* active state */
@@ -100,8 +97,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   textarea:focus-within ~ label{
     top: -20px;
     font-size: 14px;
-    opacity: .8;
-    color: #6c757d;
+    // background-color: red;
   }
 
 
@@ -150,44 +146,12 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     width: 100%;
   }
   
-  /* HIGHLIGHTER */
-  
-  .highlight {
-    position: absolute;
-    height: 60%;
-    width: 100%;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-  }
-  
-  /* active state */
-  
-  .form-input:focus ~ .highlight{
-    animation: inputHighlighter 0.3s ease;
-  }
-  
-  /* ANIMATIONS */
-  
-  @keyframes inputHighlighter {
-    from {
-      background: color(main);
-    }
-    to {
-      width: 0;
-    //   background: transparent;
-    }
-  }
-  
+
   input[type="email"] {
    & ~ span.validation-text {
-    //   position: absolute;
       visibility: hidden;
       font-family: "roboto", sans-serif;
-    //   font-size: 0.6em;
       width: $width;
-    //   margin-left: 25px;
       margin-top: -5px;
       color: white;
       transition: color 0.3s ease-in-out;
@@ -195,7 +159,6 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     &:not([value=""]) {
       &::-webkit-input-placeholder {
         font-size: 0.8em;
-        // transform: translateY(-20px);
         visibility: visible !important;
         opacity: 1;
       }
@@ -215,7 +178,6 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
           rgba(255, 255, 255, 0) 96%,
           $invalid 4%
         );
-        // visibility: hidden;
       }
     }
     &:not(:focus):not(:valid):not([value=""]) {
