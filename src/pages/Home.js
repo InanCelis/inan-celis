@@ -8,6 +8,7 @@ import RainbowSwirl from '../Components/RainbowSwirl';
 import MouseScroll from '../Components/Slice/MouseScroll';
 import HomeIntro from '../Components/HomeIntro';
 import Details from '../Components/Details';
+import Work from '../Components/Work';
 function Home() {
   useHelperFunction('');
   return (
@@ -24,6 +25,9 @@ function Home() {
       </div>
       <div className='margin-top-big'>
         <Details/>
+      </div>
+      <div className='margin-top-big'>
+        <Work/>
       </div>
       
     </Layout>

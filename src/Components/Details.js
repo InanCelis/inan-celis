@@ -4,12 +4,13 @@ import '../assets/styles/details.scss';
 
 function Details() {
     return (
+        <>
         <div className='details-about container'>
             <div className='content'>
                 <div className={`details`}>
                     <h3 className='font-weight-bold pb-3'>Hello there</h3>
                     <p className="text-muted mb-4  f-text-m">
-                        I'm a dedicated web developer with a deep passion 
+                        <b>Ferdinand Celis</b> is my real name a dedicated web developer with a deep passion 
                         for frontend technologies. My journey in web development 
                         started with a fascination for creating intuitive and engaging 
                         user interfaces. Over the years, I've honed my skills in HTML, 
@@ -29,6 +30,7 @@ function Details() {
                 </div>
             </div>
         </div> 
+        </>
     )
 }
 
