@@ -10,7 +10,7 @@ $width: 400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 5rem !important;
 }
 .form-container {
     margin-bottom: 40px;
@@ -214,7 +214,7 @@ $width: 400px;
 
 @media screen and (max-width: 575px) {
   .contact{
-    padding: 9rem 3% 5rem 3%;
+    padding: 9rem 3% 5rem 3% !important;
     height: unset;
   }
 }
