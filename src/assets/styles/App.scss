@@ -23,14 +23,16 @@ html, #root {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+::selection {
+  background: rgba(135, 120, 51, 0.5);
+  color: white;
+}
 .main-container {
   margin-bottom: 2rem;
 }
 .container {
   padding: 1.5%;
 }
-
 @media screen and (max-width: 450px) {
   html, #root {
     font-size: 15px;
@@ -90,7 +92,30 @@ a.in-button-main {
   }
 }
 
-
+.page-indicator {
+  clip-path: polygon(100% 40%, 100% 0, 0 100%, 40% 100%);
+  background-color: color(textColor);
+  height:10rem;
+  width: 12rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  h3 {
+    position: relative;
+    color: color(bgColor);
+    top: 1.2rem;
+    display: flex;
+    align-self: center;
+    left: 10%;
+    font-size: 1.7rem;
+    transform: rotate(-40deg);
+    // letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
 
 .button {
   font-size: 17px;
@@ -323,7 +348,7 @@ a:hover {
 
 footer {
   text-align: center;
-  padding: 0 3% 4rem 3%;
+  padding: 0 3% 8rem 3%;
   u {
     text-decoration: underline;
     font-weight: 500;
@@ -363,6 +388,17 @@ footer {
       color: color(bgColor);
       font-size: sizes(fontSizeXS);
       --p: 100%;
+  }
+
+  .page-indicator {
+    height:8rem;
+    width: 9rem;
+    h3 {
+      top: 1rem;
+      left: 10%;
+      font-size: 1.2rem;
+      transform: rotate(-42deg);
+    }
   }
 }
 

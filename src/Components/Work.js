@@ -1,43 +1,45 @@
-
+import parse from 'html-react-parser'
 import "../assets/styles/work.scss";
+
+import data from '../api/work.json';
 function Work() {
+
+
+    const works = data.slice(0, 5).map((w, index) =>{
+        return (
+            <div className="w-item shadow" key={index}>
+                <div className="w-header">
+                    <div className="company-position">
+                        {w.position} - {w.job_type}
+                    </div>
+                    <div className="year">{w.from_date} - {w.to_date}</div>
+                </div>
+                <div className="w-content">
+                    <div className="w-details">
+                        <p className="font-weight-bold f-text-m">{w.company}</p>
+                        <span className="pr-3"><i class="fa-solid fa-location-dot textMain"></i> {w.address}</span>
+                        <span><a href={`${w.site}`} target="_blank"><i class="fa-solid fa-link textMain"></i> {w.site_text}</a></span>
+                    
+                        <p className='pt-3'>
+                            {parse(w.description)}
+                        </p>
+                        <div className="tool-used">
+                            {w.tool.map(function(item){
+                                return <span>{item}</span>
+                            })}
+                        </div>
+                    </div>
+                    <div className="w-logo">
+                    <img src={require(`../assets/images/company/${w.logo}`)}  className="my-image"/>
+                    </div>
+                </div>
+             </div>
+        )
+    })
     return (
       <div className="work container">
         <h3 className='font-weight-bold text-center pb-5'>Professional Experience</h3>
-        <div className="w-item shadow">
-            <div className="w-header">
-                <div className="company-position">
-                    Software Engineer - Full-time
-                </div>
-                <div className="year">March 2023 - Present</div>
-            </div>
-            <div className="w-content">
-                <div className="w-details">
-                    <p className="font-weight-bold f-text-m">Accenture</p>
-                    <span className="pr-3"><i class="fa-solid fa-location-dot textMain"></i> Taguig, Philippines</span>
-                    <span><a href="https://www.accenture.com/" target="_blank"><i class="fa-solid fa-link textMain"></i> accenture.com</a></span>
-                   
-                    <p className="pt-3">
-                        <b>Responsibilities</b> 
-                        <ul className="text-muted">
-                            <li>Develop and maintain front end component of the ERP</li>
-                            <li>Collaborating with back-end developers and B2B endpoints on the integration of elements.</li> 
-                            <li>Running diagnostic tests, repairing defects, and providing technical support.</li>
-                            <li>Recommending and implementing improvements to processes and solutions.</li>
-                            <li>Implement and apply Continuous Integration and Continuous Development practices.</li>
-                        </ul>
-                    </p>
-                    <div className="tool-used">
-                        <span>Asp.net</span>
-                        <span>C#</span>
-                        <span>Oracle</span>
-                    </div>
-                </div>
-                <div className="w-logo">
-                <img src={require(`../assets/images/company/acn.png`)}  className="my-image"/>
-                </div>
-            </div>
-        </div>
+        {works}
       </div>
       
     )

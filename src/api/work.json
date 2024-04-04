@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "position": "Software Engineer",
+        "job_type": "Full-time",
+        "from_date": "March 2023",
+        "to_date": "Present",
+        "company": "Accenture",
+        "address": "Uptown Taguig, Philippines",
+        "site": "https://www.accenture.com/",
+        "site_text": "accenture.com",
+        "description": "<span className='text-muted'>As a Software Engineer at Accenture, responsibilities include designing, coding, and testing software applications, collaborating with cross-functional teams to understand client requirements, implementing innovative solutions using various programming languages and technologies, ensuring software quality and performance through rigorous testing, participating in agile development processes, providing maintenance and support for existing applications, and staying updated with the latest industry trends and technologies to contribute to continuous improvement efforts.</span>",
+        "tool" : [
+            "Asp.net",
+            "C#",
+            "Oracle Database"
+        ],
+        "logo": "acn.png"
+    },
+    {
+        "id": 2,
+        "position": "Freelancer",
+        "job_type": "Part time",
+        "from_date": "2019",
+        "to_date": "Present",
+        "company": "Flexible role",
+        "address": "Multiple Location",
+        "site": "https://inancelis.github.io/",
+        "site_text": "inancelis.github.io",
+        "description": "<span className='text-muted'>As a freelancer, I thrive on the dynamic nature of juggling multiple projects, each presenting its unique set of challenges and learning opportunities. I adapt swiftly to clients' varying needs, crafting bespoke solutions that align with their goals. My days are a blend of creative brainstorming, rigorous problem-solving, and continuous learning, using an array of technologies and tools. I communicate transparently, ensuring expectations are clear and deliverables are met with precision. Above all, I'm committed to delivering excellence, driving growth, and fostering enduring partnerships.</span>",
+        "tool" : [
+            "Web Development",
+            "Converting PSD to HTML",
+            "Graphic Designing",
+            "T-shirt Design"
+        ],
+        "logo": "freelance.png"
+    },
+    {
+        "id": 3,
+        "position": "Front-End Web Developer",
+        "job_type": "Full-time",
+        "from_date": "May 2022",
+        "to_date": "March 2023",
+        "company": "Asticom Group of Companies",
+        "address": "Bonifacio Global City, Taguig City, Philippines",
+        "site": "https://asticom.com.ph/",
+        "site_text": "asticom.com.ph",
+        "description": "<b>Responsibilities</b> <ul className='text-muted'><li>Develop and maintain front end component of the ERP</li><li>Collaborating with back-end developers and B2B endpoints on the integration of elements.</li> <li>Running diagnostic tests, repairing defects, and providing technical support.</li><li>Recommending and implementing improvements to processes and solutions.</li><li>Implement and apply Continuous Integration and Continuous Development practices.</li></ul>",
+        "tool" : [
+            "Php",
+            "Laravel",
+            "WordPress",
+            "Elementor Pro",
+            "AWS",
+            "React Native",
+            "JavaScript"
+        ],
+        "logo": "asticom.png"
+    },
+    {
+        "id": 4,
+        "position": "Web Developer",
+        "job_type": "Full-time",
+        "from_date": "Jan 2021",
+        "to_date": "April 2022",
+        "company": "Valens Research Asia",
+        "address": "Pasig City, Philippines",
+        "site": "https://www.valens-research.com/",
+        "site_text": "valens-research.com",
+        "description": "<b>Responsibilities</b> <ul className='text-muted'><li>Helps the Digital Team design, develop, deploy, and maintain web applications, scripts,and data systems for both internal use and our clients.</li><li>Ensures that all work done by the team is bug-free via Test-Driven Development methodologies.</li> <li>Administers live websites as necessary.</li></ul>",
+        "tool" : [
+            "Php",
+            "Laravel",
+            "WordPress",
+            "Elementor Pro",
+            "VueJs",
+            "Node"
+        ],
+        "logo": "valens.png"
+    }
+
+]

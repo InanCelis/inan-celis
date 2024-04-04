@@ -9,6 +9,7 @@ import LineClipPath from '../Components/Slice/LineClipPath';
 import '../assets/styles/contact.scss';
 
 import AlertPopup from '../Components/Slice/AlertPopup';
+import PageIndicator from '../Components/Slice/PageIndicator';
 function Contact() {
     const [alert, setAlert] = useState({message: '', type: '', isVisible: false});
     //form fields   
@@ -39,6 +40,7 @@ function Contact() {
 
     return (
         <Layout>
+            <PageIndicator page='Contact'/>
             <AlertPopup
                 alertInfo={alert}
                 onClose={() => setAlert(alert.isVisible = false)}
