@@ -4,7 +4,6 @@
 
 .work {
     display: flex;
-    // background-color: red;
     flex-direction: column;
     align-items: center;
     .w-item {
@@ -14,7 +13,6 @@
             display: flex;
             justify-content: space-between;
             color: white;
-            // border-radius: 6px 6px 0 0;
             background-color: color(main);
             padding: 15px 25px;
             font-size: 19px;
@@ -24,7 +22,6 @@
         .w-content {
             display: flex;
             justify-content: space-between;
-            // border-radius: 0 0 6px 6px;
             font-size: 15px;
             border: 1px solid color(textColor);
             padding: 25px 25px;
@@ -39,7 +36,6 @@
                 ul, li {
                     padding-left: 1rem;
                     line-height: 170%;
-                    // letter-spacing: 1.5px;
                 }
 
                 .tool-used {
@@ -48,7 +44,7 @@
                     span {
                         font-size: 14px;
                         padding: 10px;
-                        margin-bottom: 10px;
+                        margin-bottom: 8px;
                         margin-right: 10px;
                         background: rgba(135, 120, 51, 0.5);
                         border-radius: 30px;
@@ -90,7 +86,7 @@
 
 @media screen and (max-width: 767px) {
     .work {
-        padding: 6rem 3% 3rem 3% !important;
+        padding: 6rem 3% 5rem 3% !important;
 
         .w-header {
             flex-direction: column;

@@ -63,7 +63,6 @@ header {
             &:after {
                 width: 30px;
                 animation:grow 300ms forwards;
-                // background-color: color(main);
                 border: 2px solid color(main);
               }
           }
@@ -75,7 +74,6 @@ header {
             height: 90%;
             right: 25px;
             top: calc(5% - 1px/2);
-            // background-color: color(main);
             pointer-events: none;
           }
           
@@ -128,7 +126,6 @@ header {
 	#middle-line {
     transform-box: fill-box;
 	  transform-origin: center;
-		// animation: hide 0.7s ease-out forwards;
 	}
 }
 
@@ -230,7 +227,6 @@ header {
     }
 
     .mobile-header {
-      // position: relative;
       display: block;
       .logo {
         width: 90px;
@@ -249,7 +245,6 @@ header {
     }
 
     .parent-mobile {
-      // display: none;
       position: absolute;
       height: 0;
       width: 100%;
@@ -257,7 +252,6 @@ header {
       padding: 3%;
       right: 0;
       transition: .7s ease;
-      // background-color: color(main);
       overflow: hidden;
       z-index: 99;
       backdrop-filter: blur(10px);

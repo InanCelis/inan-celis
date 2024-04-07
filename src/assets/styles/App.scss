@@ -85,13 +85,14 @@ a.in-button-main {
   font-size: 22px;
   border-radius: 40px;
   transition: $transition;
-  // box-shadow: ;
   &:hover {
     transform: scale(1.1);
     opacity: .9;
   }
 }
 
+
+// page indicator style
 .page-indicator {
   clip-path: polygon(100% 40%, 100% 0, 0 100%, 40% 100%);
   background-color: color(textColor);
@@ -112,7 +113,6 @@ a.in-button-main {
     left: 10%;
     font-size: 1.7rem;
     transform: rotate(-40deg);
-    // letter-spacing: 2px;
     text-transform: uppercase;
   }
 }
@@ -316,10 +316,6 @@ a:hover {
 }
 
 @media screen and (max-width: 780px) {
-  // .button-52 {
-  //   font-size: 16px;
-  //   padding: 10px 20px 10px;
-  // }
 
   .button {
     font-size: 15px;

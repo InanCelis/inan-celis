@@ -39,12 +39,10 @@ $width: 400px;
     }
   
     &:before {
-    //   background: #ecf0f1;
       top: 0;
     }
   
     &:after {
-      // background: #fff;
       bottom: 0;
     }
   }
@@ -99,7 +97,6 @@ $width: 400px;
   textarea:focus-within ~ label{
     top: -20px;
     font-size: 14px;
-    // background-color: red;
   }
 
 
@@ -109,7 +106,6 @@ $width: 400px;
     top: -10px !important;
     font-size: 18px !important;
     color: color(textColor) !important;
-    // background-color: #f0f0f0;
   }
 
 
@@ -127,7 +123,6 @@ $width: 400px;
     content: "";
     height: 2px;
     width: 0;
-    // bottom: 1px;
     position: absolute;
     background: color(textColor);
     transition: 0.2s ease all;

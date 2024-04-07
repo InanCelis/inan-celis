@@ -7,8 +7,6 @@ canvas {
     width: 100%;
     height: 100%;
     opacity: .5;
-    // z-index: -1;
-    // background-color: #000; /* Dark background for better visibility */
   }
 .text-container h1{
     font-family: $font-nunito;
@@ -88,7 +86,6 @@ canvas {
 
             img {
                 width: 100%;
-                // border-bottom: 10px solid color(textColor);
             }
         }
         .details {
@@ -121,8 +118,6 @@ canvas {
             h2::after {
                 content:"Developer";
                 animation: changeText 7s infinite;
-                // background-color: color(main);
-                // pointer-events: none;
                 padding: 5px 10px;
                 background: linear-gradient(to left, transparent 50%, color(main) 50%) right;
                 background-size: 0;
