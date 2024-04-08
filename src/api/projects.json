@@ -15,7 +15,8 @@
             "WordPress / Elementor Pro",
             "PHP"
         ],
-        "type":"WordPress"
+        "type":"WordPress",
+        "featured_image":"ati-1.png"
     },
     { 
         "id": 2,
@@ -33,7 +34,8 @@
             "WordPress / Elementor Pro",
             "PHP"
         ],
-        "type":"WordPress"
+        "type":"WordPress",
+        "featured_image":"championclub.png"
     },
     { 
         "id": 3,
@@ -49,7 +51,8 @@
             "CSS",
             "JavaScript / JQuery"
         ],
-        "type":"psd to html"
+        "type":"psd to html",
+        "featured_image":"baby-company.png"
     }, 
     { 
         "id": 4,
@@ -58,7 +61,7 @@
         "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
         "website":"https://www.acquiro.com.ph/",
         "image":"baby-company-laptop.png",
-        "imageBg": "baby-company-bg.png",
+        "imageBg": "acquiro.jpg",
         "responsibilities":"I served as the main developer in transforming this website, aiming to overhaul the previous version into a completely refreshed design that aligns with the company's new branding. The layout, crafted by our marketing and UI/UX teams, was then turned into a functional website by me.",
         "tools": [
             "HTML",
@@ -67,7 +70,8 @@
             "WordPress / Elementor Pro",
             "PHP"
         ],
-        "type":"WordPress"
+        "type":"WordPress",
+        "featured_image":"acquiro.png"
     },
     { 
         "id": 5,
@@ -76,7 +80,7 @@
         "description":"A polished website crafted from PSD to HTML, featuring seamless transitions and responsive design for optimal user experience and engagement.",
         "website":"https://absi.ph/",
         "image":"baby-company-laptop.png",
-        "imageBg": "baby-company-bg.png",
+        "imageBg": "absi.png",
         "responsibilities":"I served as the main developer in transforming this website, aiming to overhaul the previous version into a completely refreshed design that aligns with the company's new branding. The layout, crafted by our marketing and UI/UX teams, was then turned into a functional website by me.",
         "tools": [
             "HTML",
@@ -85,7 +89,8 @@
             "WordPress / Elementor Pro",
             "PHP"
         ],
-        "type":"WordPress"
+        "type":"WordPress",
+        "featured_image":"absi-1.png"
     },
     { 
         "id": 6,
@@ -103,7 +108,8 @@
             "WordPress / Elementor Pro",
             "PHP"
         ],
-        "type":"WordPress"
+        "type":"WordPress",
+        "featured_image":"finsi.png"
     },
     
     { 
@@ -121,6 +127,7 @@
             "JavaScript / JQuery",
             "PHP / Laravel Framework"
         ],
-        "type":"Laravel"
+        "type":"Laravel",
+        "featured_image":"rajtheone.png"
     }
 ]

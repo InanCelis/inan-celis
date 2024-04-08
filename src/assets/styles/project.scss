@@ -94,6 +94,31 @@
     }
 
 }
+
+
+.paginator {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    button {
+        padding: 15px;
+        background-color: color(textColor);
+        color: color(bgColor);
+        border: 1px solid color(bgColor);
+        outline: none;
+        &:nth-child(1) {
+            border-bottom: none;
+        }
+        &:hover {
+            background-color: color(main);
+            color: color(textColor);
+        }
+    }
+ }
+ 
 @media screen and (max-width: 1333px) {
     .project {
         .content {
@@ -176,6 +201,14 @@
             }
         }
     }
+
+    .paginator {
+        right: 0%;
+        bottom: 50%;
+        button {
+            padding: 10px;
+        }
+     }
 
 }
 

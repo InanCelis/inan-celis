@@ -18,7 +18,7 @@ const AlertPopup = ({ alertInfo, onClose }) => {
           (
             <>
               <i class="fa-solid fa-exclamation error"></i>
-              <h3 className='pt-2'>Opps, error!</h3>
+              <h3 className='pt-2'>Opps, sorry!</h3>
             </>
           )}
         </div>
