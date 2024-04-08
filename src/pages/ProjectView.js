@@ -66,8 +66,12 @@ function ProjectView() {
               onClose={() => setAlert(alert.isVisible = false)}
           />
         <div className='paginator shadow'>
-          <button onClick={() => redirectPage('prev')}><i class="fa-solid fa-arrow-left"></i></button>
-          <button onClick={() => redirectPage('next')}><i class="fa-solid fa-arrow-right"></i></button>
+          <button type="button" onClick={() => redirectPage('prev')} data-toggle="tooltip" data-placement="left" title="Previous">
+            <i className="fa-solid fa-arrow-left"></i>
+          </button>
+          <button type="button" onClick={() => redirectPage('next')} data-toggle="tooltip" data-placement="left" title="Next">
+            <i className="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
         <div className='project-item-bg' style={{backgroundImage: `url('project/${projItem.imageBg}')`}}></div>
         <div className='project-item-content container' key={projItem.id}>
@@ -76,20 +80,23 @@ function ProjectView() {
             <p className='text-muted f-text-m'>{projItem.responsibilities}</p>
             { projItem.website ?(
               <NavLink target={"_blank"} to={`${projItem.website}`} className="link" >
-                <i class="fa-solid fa-chevron-right"></i> <span>Visit website</span>
+                <i className="fa-solid fa-chevron-right"></i> <span>Visit website</span>
               </NavLink>
             ) : ''}
           </div>
           <div className='tools'>
             {projItem.tools?.map(tool => (  
-              <div>  
+              <div key={tool}>  
                 {tool}  
               </div>  
             ))}  
           </div>
         </div>
-        <div className='container' style={{paddingBottom: '5rem' }}>
-          <LazyLoadImage src={`project/featured/${projItem.featured_image}`}  className="w-100 shadow"/>
+        <div className='container pt-4' style={{paddingBottom: '5rem' }}>
+          {projItem.featured_image?.map(featured => (  
+              <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured}/>
+          ))} 
+          
         </div>
       </>
       

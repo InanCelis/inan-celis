@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-self: center;
-
+    border-radius: 0rem !important;
     .badge-project {
         color: color(bgColor);
         background-color: color(textColor);
@@ -67,6 +67,10 @@
     .details {
         width: 60%;
         font-style: $font-raleway;
+
+        h1 {
+            text-transform: capitalize;
+        }
         p{
             padding: 15px 0;
         }
@@ -97,12 +101,11 @@
 
 
 .paginator {
-    // background-color: red;
     display: flex;
     flex-direction: column;
     position: fixed;
     right: 3%;
-    bottom: 10%;
+    bottom: 6%;
     button {
         padding: 15px;
         background-color: color(textColor);
@@ -118,7 +121,16 @@
         }
     }
  }
- 
+
+.tooltip-inner {
+    background-color: color(textColor);
+    box-shadow: 0px 0px 4px color(textColor);
+    color: color(bgColor);
+}
+
+.tooltip .arrow::before {
+    border-left-color: color(textColor);
+}
 @media screen and (max-width: 1333px) {
     .project {
         .content {
@@ -184,7 +196,11 @@
             }
         }
     }
-
+    .project-card {
+        a {
+            margin-top: 15px;
+        }
+    }
     .project-item-content {
         padding-top: 9rem !important;
         flex-direction: column;

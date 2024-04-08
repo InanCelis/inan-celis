@@ -33,7 +33,7 @@ function Layout({ children }) {
       <div className="mobile-header">
         <NavLink to="/" className="logo-link"><Logo/></NavLink>
         <svg id="hamburger" className={isOpen ? 'open-menu' : ''} viewbox="0 0 60 40" onClick={ToggleMenu}>
-          <g stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <g strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
             <path id="top-line" d="M10,10 L50,10 Z"></path>
             <path id="middle-line" d="M10,20 L50,20 Z"></path>
             <path id="bottom-line" d="M10,30 L50,30 Z"></path>

@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import LineClipPath from './Slice/LineClipPath';
 import '../assets/styles/details.scss';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 function Details() {
     return (
         <>
@@ -21,12 +21,12 @@ function Details() {
                         balance and empathy, qualities I bring into my development projects.
                     </p>
                     <NavLink to={`/contact`} className="link" >
-                    <i class="fa-regular fa-paper-plane"></i> <span>Send Message</span>
+                    <i className="fa-regular fa-paper-plane"></i> <span>Send Message</span>
                     </NavLink>
                 </div>
                 <div className='image'>
                     <LineClipPath content={`About me`} textClass={'f-text-s'}/>
-                    <img src={require(`../assets/images/me-at-office.jpg`)}  className="shadow" />
+                    <LazyLoadImage src={require(`../assets/images/me-at-office.jpg`)}  className="shadow" />
                 </div>
             </div>
         </div> 

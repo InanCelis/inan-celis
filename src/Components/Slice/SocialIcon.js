@@ -5,7 +5,7 @@ function SocialIcon() {
                 <i className="fa-brands fa-facebook-messenger"></i>
             </a>
             <a href="https://wa.link/hbinn0" target="__blank">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp"></i>
             </a>
             {/* <a href="https://github.com/InanCelis" target="__blank">
                 <i className="fa-brands fa-github"></i>

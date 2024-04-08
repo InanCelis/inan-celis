@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import LineClipPath from './Slice/LineClipPath';
 import data from '../api/projects.json';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 function ProjectItem({itemCount, viewAll, otherItem}) {
 
     const projects = data.slice(0, itemCount).map((p, index) =>{
@@ -17,7 +19,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
                             <NavLink to={`/project/${p.url}`} className="button-52 button" >View project &nbsp;<i className="fa-solid fa-arrow-right"></i></NavLink>
                         </div>
                         <div className='image'>
-                            <img src={require(`../assets/images/project/${p.image}`)}  className="my-image" alt={p.company}/>
+                            <LazyLoadImage src={require(`../assets/images/project/${p.image}`)}  className="my-image" alt={p.company}/>
                         </div>
                     </div>
                 </div>
@@ -27,20 +29,20 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
 
     const otherProjects = data.slice(3, itemCount).map((p, index) =>{
         return (
-            <div class="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index}>
+            <div className="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index}>
                 <NavLink to={`/project/${p.url}`} className='card-link'>
-                    <div class="card bgColor p-3 mb-2 shadow project-card h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="badge badge-project"> <span className='text-capitalize'>{p.type}</span> </div>
-                            <LineClipPath content={`0${p.id}`} xtraClass={'line-small'}/>
+                    <div className="card bgColor p-3 mb-2 shadow project-card h-100">
+                        <div className="d-flex justify-content-between">
+                            <div className="badge badge-project"> <span>{p.type}</span> </div>
+                            <LineClipPath content={`${p.id <= 9 ? '0'+p.id : p.id}`} xtraClass={'line-small'}/>
                         </div>
-                        <div class="mt-4">
+                        <div className="mt-4">
                             <h3>{p.company}</h3>
-                            <div class="mt-3"><span class="text-muted">{p.description}</span> </div>
+                            <div className="mt-3"><span className="text-muted">{p.description}</span> </div>
                         </div>
                         <>
-                            <NavLink target={"_blank"} to={`${p.url}`} className="link" >
-                                <i class="fa-solid fa-chevron-right"></i> <span>View project</span>
+                            <NavLink target={"_blank"} to={`${p.url}`} className="link mt-2" >
+                                <i className="fa-solid fa-chevron-right"></i> <span>View project</span>
                             </NavLink>
                         </>
                     </div>
@@ -55,7 +57,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
         {otherItem ?(
             <div className='container pt-5'>
                 <h4 className='f-text-m'>Other Projects</h4>
-                <div class="row project-row">
+                <div className="row project-row">
                     {otherProjects}
                 </div>
             </div>

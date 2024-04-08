@@ -12,9 +12,9 @@ function Logo() {
                                 <g>
                                     <svg viewBox="0 0 323.7460481060738 184.58263735996394" height="184.58263735996394" width="323.7460481060738">
                                         <g>
-                                            <path d="M0 184.583v-184.583h323.746v184.583z" fill="snow" stroke="transparent" stroke-width="0" rx="0%" data-fill-palette-color="tertiary"></path>
-                                            <path d="M3.283 181.299v-178.016h317.18v178.016z" fill="#181818" stroke="transparent" stroke-width="0" rx="0%" data-fill-palette-color="quaternary"></path>
-                                            <path d="M9.85 174.733v-164.883h304.046v164.883z" fill="snow" stroke="transparent" stroke-width="0" data-fill-palette-color="tertiary"></path>
+                                            <path d="M0 184.583v-184.583h323.746v184.583z" fill="snow" stroke="transparent" strokeWidth="0" rx="0%" data-fill-palette-color="tertiary"></path>
+                                            <path d="M3.283 181.299v-178.016h317.18v178.016z" fill="#181818" stroke="transparent" strokeWidth="0" rx="0%" data-fill-palette-color="quaternary"></path>
+                                            <path d="M9.85 174.733v-164.883h304.046v164.883z" fill="snow" stroke="transparent" strokeWidth="0" data-fill-palette-color="tertiary"></path>
                                         </g>
                                         <g transform="matrix(1,0,0,1,19.69974,19.69974)" id="textblocktransform">
                                             <svg viewBox="0 0 284.3465681060738 145.18315735996396" height="145.18315735996396" width="284.3465681060738" id="textblock">
@@ -27,7 +27,7 @@ function Logo() {
                                                                     opacity="1"
                                                                     transform="matrix(1,0,0,1,0,0)"
                                                                     fill="#bd883c"
-                                                                    class="wordmark-text-0"
+                                                                    className="wordmark-text-0"
                                                                     data-fill-palette-color="quaternary"
                                                                     id="text-0"
                                                                 ></path>
@@ -44,7 +44,7 @@ function Logo() {
                                                                     opacity="1"
                                                                     transform="matrix(1,0,0,1,0,0)"
                                                                     fill="#181818"
-                                                                    class="slogan-text-1"
+                                                                    className="slogan-text-1"
                                                                     data-fill-palette-color="quaternary"
                                                                     id="text-1"
                                                                 ></path>

@@ -1,13 +1,15 @@
 import parse from 'html-react-parser'
 import "../assets/styles/work.scss";
-
 import data from '../api/work.json';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 function Work() {
 
 
     const works = data.slice(0, 5).map((w, index) =>{
         return (
-            <div className="w-item shadow" key={index}>
+            <div className="w-item shadow" key={w.id}>
                 <div className="w-header">
                     <div className="company-position">
                         {w.position} - {w.job_type}
@@ -17,20 +19,20 @@ function Work() {
                 <div className="w-content">
                     <div className="w-details">
                         <p className="font-weight-bold f-text-m">{w.company}</p>
-                        <span className="pr-3"><i class="fa-solid fa-location-dot textMain"></i> {w.address}</span>
-                        <span><a href={`${w.site}`} target="_blank"><i class="fa-solid fa-link textMain"></i> {w.site_text}</a></span>
+                        <span className="pr-3"><i className="fa-solid fa-location-dot textMain"></i> {w.address}</span>
+                        <span><a href={`${w.site}`} target="_blank"><i className="fa-solid fa-link textMain"></i> {w.site_text}</a></span>
                     
-                        <p className='pt-3'>
+                        <div className='pt-3 pb-2'>
                             {parse(w.description)}
-                        </p>
+                        </div>
                         <div className="tool-used">
-                            {w.tool.map(function(item){
-                                return <span>{item}</span>
+                            {w.tool.map(function(item, index){
+                                return <span key={index}>{item}</span>
                             })}
                         </div>
                     </div>
                     <div className="w-logo">
-                    <img src={require(`../assets/images/company/${w.logo}`)}  className="my-image"/>
+                        <LazyLoadImage src={require(`../assets/images/company/${w.logo}`)}  className="my-image"/>
                     </div>
                 </div>
              </div>

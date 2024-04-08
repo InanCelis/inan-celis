@@ -7,17 +7,17 @@ const AlertPopup = ({ alertInfo, onClose }) => {
   return (
     <div className="alert-backdrop">
       <div className="alert-box">
-        <button onClick={onClose} className='close'><i class="fa-solid fa-xmark"></i></button>
+        <button onClick={onClose} className='close'><i className="fa-solid fa-xmark"></i></button>
         <div className='type'>
           { alertInfo.type === 'success'? (
             <>
-              <i class="fa-regular fa-circle-check text-success"></i>
+              <i className="fa-regular fa-circle-check text-success"></i>
               <h3 className='pt-2'>Success!</h3>
             </>
           ): 
           (
             <>
-              <i class="fa-solid fa-exclamation error"></i>
+              <i className="fa-solid fa-exclamation error"></i>
               <h3 className='pt-2'>Opps, sorry!</h3>
             </>
           )}

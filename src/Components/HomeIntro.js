@@ -1,9 +1,11 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 function HomeIntro({photo}) {
     return (
         <div className='homepage'>
             <div className='content'>
                 <div className='image'>
-                    <img src={photo} className="my-image"/>
+                    <LazyLoadImage src={photo} className="my-image"/>
                 </div>
                 <div className='details'>
                     <h6>Explore My World!</h6>

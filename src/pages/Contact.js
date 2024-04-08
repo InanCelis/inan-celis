@@ -61,7 +61,7 @@ function Contact() {
                             <span className="bar"></span>
                             <label>Name</label>
                         </div>
-                        <div class="group">
+                        <div className="group">
                             <input type="email" 
                                 required 
                                 name='email' 
@@ -73,7 +73,7 @@ function Contact() {
                             <span className="bar"></span>
                             <label>Your Email</label>
                             <span className="validation-text">
-                                <i class="fa-solid fa-triangle-exclamation"></i> Please enter a valid email address.
+                                <i className="fa-solid fa-triangle-exclamation"></i> Please enter a valid email address.
                             </span>
                         </div>
                         <div className="group">
@@ -89,7 +89,7 @@ function Contact() {
                             <label>Message</label>
                         </div>
                         
-                        <button type="submit" className="link link-full" ><i class="fa-solid fa-chevron-right"></i> Send Message</button>
+                        <button type="submit" className="link link-full" ><i className="fa-solid fa-chevron-right"></i> Send Message</button>
                     </form>
                     <div className='other-contact'>
                         <h4 className='f-text-m pb-2'>Other Contact info</h4>

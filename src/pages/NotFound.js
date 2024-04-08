@@ -13,7 +13,7 @@ function Project() {
         <h2 className='pb-1'>This Page Must Have Taken a Coffee Break.</h2>
         <p className="f-text-m text-muted">Like a good code, you’ve discovered something that's currently not here. Maybe it's refining its skills or learning a new language. Let's navigate back to where all successful projects are displayed.🌴</p>
         <NavLink to={`/`} className="link" >
-        <i class="fa-solid fa-chevron-right"></i> <span>Back to homepage</span>
+        <i className="fa-solid fa-chevron-right"></i> <span>Back to homepage</span>
         </NavLink>
       </div>
     </Layout>
