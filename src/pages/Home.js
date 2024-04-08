@@ -23,7 +23,7 @@ function Home() {
       <div>
         <ProjectItem itemCount={3} viewAll={true} hasObject={null} otherItem={false}/>
       </div>
-      <div className='margin-top-big'>
+      <div className='margin-top-big padding-mobile'>
         <Details/>
       </div>
       <div className='margin-top-big'>

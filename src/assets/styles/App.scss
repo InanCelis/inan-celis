@@ -430,6 +430,14 @@ footer {
   
 }
 
+@media screen and (max-width: 575px) {
+  .padding-mobile{
+    padding: 0 3% 0 3% !important;
+    height: unset;
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   .not-found {
   
