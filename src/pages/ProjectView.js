@@ -1,10 +1,12 @@
 import React, { useEffect, useState }from 'react';
-import { NavLink, useNavigate} from 'react-router-dom';
 import Layout from '../Components/Layout/Layout';
+import AlertPopup from '../Components/Slice/AlertPopup';
+import { NavLink, useNavigate} from 'react-router-dom';
 import { useHelperFunction } from '../utils/helperFuntion';
 import '../assets/styles/project.scss';
 import project from '../api/projects.json';
-import AlertPopup from '../Components/Slice/AlertPopup';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 function ProjectView() {
   
     const [projItem, setProjItem] = useState([]);
@@ -86,8 +88,8 @@ function ProjectView() {
             ))}  
           </div>
         </div>
-        <div className='container'>
-          <img src={`project/featured/${projItem.featured_image}`}  className="w-100 shadow"/>
+        <div className='container' style={{paddingBottom: '5rem' }}>
+          <LazyLoadImage src={`project/featured/${projItem.featured_image}`}  className="w-100 shadow"/>
         </div>
       </>
       
