@@ -33,8 +33,12 @@
     }
 }
 @media screen and (max-width: 575px) {
+    .expertise {
+        padding-top: 6rem !important;
+    }
     .expertise-row {
         margin: 0 !important;
+        
         // padding: 0 3% 0 3% !important;
     }
     .column {
