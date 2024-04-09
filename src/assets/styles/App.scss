@@ -24,7 +24,7 @@ html, #root {
   scroll-behavior: smooth;
 }
 ::selection {
-  background: rgba(135, 120, 51, 0.5);
+  background: color(rgbaColor);
   color: white;
 }
 .main-container {
@@ -472,6 +472,6 @@ footer {
 
 .shadow {
   box-shadow: 2px 4px 9px -1px rgba(130,126,126,0.75) !important;
--webkit-box-shadow: 2px 4px 9px -1px rgba(130,126,126,0.75) !important;
--moz-box-shadow: 2px 4px 9px -1px rgba(130,126,126,0.75) !important;
-}
+  -webkit-box-shadow: 2px 4px 9px -1px rgba(130,126,126,0.75) !important;
+  -moz-box-shadow: 2px 4px 9px -1px rgba(130,126,126,0.75) !important;
+}   

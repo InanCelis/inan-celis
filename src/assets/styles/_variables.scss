@@ -19,6 +19,7 @@ $transition: 0.7s ease background-color, 0.7s ease opacity;
     --primary:#6b6b6b;
     --text-light: color-mix(in lab, var(--text) 60%, transparent);
     --snowColor:snow;
+    --rgbaColor: rgba(189, 136, 60, .7);
 
     --fontSizeH0: 6.25rem;
     --fontSizeH1: 4.375rem;
@@ -43,6 +44,7 @@ $colors: (
     primaryColor:var(--primary),
     textLight:var(--text-light),
     snowColor:var(--snowColor),
+    rgbaColor:var(--rgbaColor),
 );
 
 $sizes: (

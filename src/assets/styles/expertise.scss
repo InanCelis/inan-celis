@@ -1,0 +1,43 @@
+@import '_variables';
+@import 'functions';
+
+
+.expertise-row {
+    .card {
+        border: 1px solid color(main);
+        padding: 1.8rem;
+        border-radius: 0rem !important;
+        overflow-y: hidden;
+        width: 100%;
+        .ex-header {
+            i {
+                font-size: 3rem;
+                padding-right: 1.2rem;
+                color: color(rgbaColor);
+            }
+            h3 {
+                font-weight: 600;
+                letter-spacing: .8px;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .expertise-row  {
+        .column:not(:first-child){
+            .card {
+                border-top:0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .expertise-row {
+        margin: 0 !important;
+        // padding: 0 3% 0 3% !important;
+    }
+    .column {
+        padding: 0;
+    }
+}

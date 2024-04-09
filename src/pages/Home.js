@@ -9,6 +9,7 @@ import MouseScroll from '../Components/Slice/MouseScroll';
 import HomeIntro from '../Components/HomeIntro';
 import Details from '../Components/Details';
 import Work from '../Components/Work';
+import Expertise from '../Components/Expertise';
 function Home() {
   useHelperFunction('');
   return (
@@ -25,6 +26,9 @@ function Home() {
       </div>
       <div className='margin-top-big padding-mobile'>
         <Details/>
+      </div>
+      <div className='margin-top-big'>
+        <Expertise/>
       </div>
       <div className='margin-top-big'>
         <Work/>

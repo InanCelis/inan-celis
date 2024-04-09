@@ -26,7 +26,7 @@ function Details() {
                 </div>
                 <div className='image'>
                     <LineClipPath content={`About me`} textClass={'f-text-s'}/>
-                    <LazyLoadImage src={require(`../assets/images/me-at-office.jpg`)}  className="shadow" />
+                    <LazyLoadImage src={require(`../assets/images/me-at-office.jpg`)} />
                 </div>
             </div>
         </div> 

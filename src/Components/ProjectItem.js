@@ -7,7 +7,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
 
     const projects = data.slice(0, itemCount).map((p, index) =>{
         if(index <= 2) {
-            return(
+            return( 
                 <div className='project container' key={index}>
                     <div className='content'>
                         <div className={`details ${p.id%2 ===0 ? "order-last": ""}`}>
