@@ -9,8 +9,12 @@ import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 function App() {
+
+
   return (
       <HashRouter>
+        <div id="cursor"></div>
+        <div id="cursor-border"></div>
         <Fragment>
           <Routes>
             <Route path="*" element={<NotFound />} />
