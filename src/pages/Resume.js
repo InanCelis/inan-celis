@@ -3,6 +3,7 @@ import Layout from '../Components/Layout/Layout';
 import { useHelperFunction } from '../utils/helperFuntion';
 import Expertise from '../Components/Expertise';
 import Work from '../Components/Work';
+import Skills from '../Components/Skills';
 import PageIndicator from '../Components/Slice/PageIndicator';
 function Resume() {
   useHelperFunction('Resume |');
@@ -13,6 +14,9 @@ function Resume() {
       <PageIndicator page='Resume'/>
       <div className='pt-5'>
           <Expertise />
+      </div>
+      <div className='pt-5'>
+          <Skills />
       </div>
       <div className='pt-5'>
           <Work />

@@ -128,8 +128,11 @@
     color: color(bgColor);
 }
 
-.tooltip .arrow::before {
+.tooltip.bs-tooltip-left .arrow::before {
     border-left-color: color(textColor);
+}
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: color(textColor);
 }
 @media screen and (max-width: 1333px) {
     .project {

@@ -6,6 +6,7 @@ import { useHelperFunction } from '../utils/helperFuntion';
 import '../assets/styles/project.scss';
 import project from '../api/projects.json';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import NotFound from './NotFound';
 
 function ProjectView() {
   
@@ -18,13 +19,19 @@ function ProjectView() {
     let str = window.location.href;
     str = str.split("/");
     let obj = data.filter(item => item.url === str[str.length - 1]);
-
+    
     useEffect(() => {
-        setProjItem(obj[0]) 
-        document.title = `${projItem.company} | Inan The Future`;
-        setCurrentPage(obj[0].id)
+        console.log(obj)
+        if(obj.length === 0) {
+          navigate("/not-found")
+        } else {
+          setProjItem(obj[0]) 
+          document.title = `${projItem.company} | Inan The Future`;
+          setCurrentPage(obj[0].id)
+        }
         
-    },[projItem]);
+        
+    });
     useHelperFunction('nothing');
   
     const redirectPage = (to) => {
@@ -77,7 +84,9 @@ function ProjectView() {
         <div className='project-item-content container' key={projItem.id}>
           <div className='details'>
             <h1 className='title-3'>{projItem.company}</h1>
-            <p className='text-muted f-text-m'>{projItem.responsibilities}</p>
+            <p className='text-muted f-text-m'>
+              {projItem.description } <br/><br/>{projItem.responsibilities}
+            </p>
             { projItem.website ?(
               <NavLink target={"_blank"} to={`${projItem.website}`} className="link" >
                 <i className="fa-solid fa-chevron-right"></i> <span>Visit website</span>

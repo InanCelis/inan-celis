@@ -10,6 +10,7 @@ import HomeIntro from '../Components/HomeIntro';
 import Details from '../Components/Details';
 import Work from '../Components/Work';
 import Expertise from '../Components/Expertise';
+import Skills from '../Components/Skills';
 function Home() {
   useHelperFunction('');
   return (
@@ -29,6 +30,9 @@ function Home() {
       </div>
       <div className='margin-top-big'>
         <Expertise/>
+      </div>
+      <div className='margin-top-big'>
+        <Skills/>
       </div>
       <div className='margin-top-big'>
         <Work/>

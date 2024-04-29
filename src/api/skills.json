@@ -1,0 +1,65 @@
+[
+    
+    {
+        "text":"Laravel",
+        "icon":"lab la-laravel"
+    },
+    {
+        "text":"Elementor Pro",
+        "icon":"lab la-elementor"
+    },
+    {
+        "text":"WordPress",
+        "icon":"lab la-wordpress"
+    },
+    {
+        "text":"PHP",
+        "icon":"lab la-php"
+    },
+    {
+        "text":"Java",
+        "icon":"lab la-java"
+    },
+    {
+        "text":"ReactJS",
+        "icon":"lab la-react"
+    },
+    
+    {
+        "text":"Vue / Nuxt",
+        "icon":"lab la-vuejs"
+    },
+    
+    {
+        "text":"JS / JQuery",
+        "icon":"lab la-js-square"
+    },
+    
+    {
+        "text":"NodeJs",
+        "icon":"lab la-node"
+    },
+    
+    {
+        "text":"HTML",
+        "icon":"lab la-html5"
+    },
+    {
+        "text":"CSS / SASS",
+        "icon":"lab la-css3"
+    },
+    {
+        "text":"Bootstrap",
+        "icon":"lab la-bootstrap"
+    },
+    {
+        "text":"MySQL",
+        "icon":"las la-server"
+    },
+    {
+        "text":"Git",
+        "icon":"lab la-git-alt"
+    }
+    
+    
+]
