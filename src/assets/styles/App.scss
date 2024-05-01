@@ -548,7 +548,11 @@ footer {
       position: relative;
       bottom: -20px;
       .swiper-pagination-bullet-active  {
-        background: color(main);
+        background: color(main) !important;
+      }
+      .swiper-pagination-bullet {
+        background: color(primaryColor);
+        opacity: .8;
       }
     }
   }
