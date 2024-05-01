@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 function ImageSlider({ data }) {
@@ -33,8 +34,12 @@ function ImageSlider({ data }) {
             spaceBetween:0
         },
       }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
+      pagination={{
+        dynamicBullets: true,
+      }}
+      modules={[Pagination]}
     >
       {data.map((s, index) => (
         <SwiperSlide key={index} virtual>

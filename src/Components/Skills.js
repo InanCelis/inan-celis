@@ -5,7 +5,7 @@ function Skills() {
     const skills = data;
     return (
         <div className="container skills">
-            <h3 className='font-weight-bold text-center pb-5'>Languages</h3>
+            <h3 className='font-weight-bold text-center pb-5'>Skill Languages</h3>
             <div className="d-flex justify-content-center">
                 <ImageSlider data={skills} />
             </div>

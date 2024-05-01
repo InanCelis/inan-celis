@@ -12,13 +12,13 @@ function Resume() {
   return (
     <Layout>
       <PageIndicator page='Resume'/>
-      <div className='pt-5'>
+      <div className='pt-5 pb-5'>
           <Expertise />
       </div>
-      <div className='pt-5'>
+      <div className='pt-5 pb-5'>
           <Skills />
       </div>
-      <div className='pt-5'>
+      <div className='pt-5 pb-5'>
           <Work />
       </div>
     </Layout>
