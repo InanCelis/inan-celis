@@ -38,7 +38,13 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
                         </div>
                         <div className="mt-4">
                             <h3>{p.company}</h3>
-                            <div className="mt-3"><span className="text-muted">{p.description}</span> </div>
+                            <div className="mt-3">
+                                <span className="text-muted">
+                                    {p.description.length > 250 ?
+                                        `${p.description.substring(0, 200)}...` : p.description
+                                    }
+                                </span>
+                            </div>
                         </div>
                         <>
                             <NavLink target={"_blank"} to={`${p.url}`} className="link mt-2" >

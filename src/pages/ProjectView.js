@@ -85,7 +85,7 @@ function ProjectView() {
           <div className='details'>
             <h1 className='title-3'>{projItem.company}</h1>
             <p className='text-muted f-text-m'>
-              {projItem.description } <br/><br/>{projItem.responsibilities}
+              {projItem.description } {projItem.responsibilities}
             </p>
             { projItem.website ?(
               <NavLink target={"_blank"} to={`${projItem.website}`} className="link" >
