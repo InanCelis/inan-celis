@@ -11,6 +11,8 @@ import Details from '../Components/Details';
 import Work from '../Components/Work';
 import Expertise from '../Components/Expertise';
 import Skills from '../Components/Skills';
+import { NavLink } from 'react-router-dom';
+
 function Home() {
   useHelperFunction('');
   return (
@@ -36,6 +38,11 @@ function Home() {
       </div>
       <div className='margin-top-big'>
         <Work/>
+      </div>
+      <div className='d-flex justify-content-center pb-5'>
+          <NavLink target={"_blank"} to={`https://drive.google.com/file/d/14vdIg2-MiBwEa6ewC4MpRJG1nBuc9Y2z/view?usp=drive_link`} className="button-50 button" >
+              View Full Resume &nbsp;<i className="fa-solid fa-arrow-right text-center"></i>
+          </NavLink>
       </div>
       
     </Layout>
