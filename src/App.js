@@ -1,6 +1,6 @@
 
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Home from './pages/Home';
 import About from './pages/About';
 import Project from './pages/Project';
@@ -8,8 +8,16 @@ import ProjectView from "./pages/ProjectView";
 import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
-
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 1000,
+      easing: "ease-out-cubic",
+    });
+  }, []);
 
   return (
       <HashRouter>

@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function HomeIntro({photo}) {
     return (
-        <div className='homepage'>
+        <div className='homepage' data-aos="fade-up-right">
             <div className='content'>
                 <div className='image'>
                     <LazyLoadImage src={photo} className="my-image"/>

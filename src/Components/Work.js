@@ -9,7 +9,7 @@ function Work() {
 
     const works = data.slice(0, 5).map((w, index) =>{
         return (
-            <div className="w-item shadow" key={w.id}>
+            <div className="w-item shadow" key={w.id} data-aos="fade-up">
                 <div className="w-header">
                     <div className="company-position">
                         {w.position} - {w.job_type}
@@ -40,7 +40,7 @@ function Work() {
     })
     return (
       <div className="work container">
-        <h3 className='font-weight-bold text-center pb-5'>Professional Experience</h3>
+        <h3 className='font-weight-bold text-center pb-5' data-aos="fade-up">Professional Experience</h3>
         {works}
       </div>
       

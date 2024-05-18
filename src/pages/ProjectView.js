@@ -82,20 +82,20 @@ function ProjectView() {
         </div>
         <div className='project-item-bg' style={{position: 'fixed', backgroundImage: `url('project/${projItem.imageBg}')`}}></div>
         <div className='project-item-content container' key={projItem.id}>
-          <div className='details'>
-            <h1 className='title-3'>{projItem.company}</h1>
-            <p className='text-muted f-text-m'>
+          <div className='details' >
+            <h1 className='title-3' data-aos="fade-up">{projItem.company}</h1>
+            <p className='text-muted f-text-m' data-aos="fade-up">
               {projItem.description } {projItem.responsibilities}
             </p>
             { projItem.website ?(
-              <NavLink target={"_blank"} to={`${projItem.website}`} className="link" >
+              <NavLink target={"_blank"} to={`${projItem.website}`} className="link" data-aos="fade-up">
                 <i className="fa-solid fa-chevron-right"></i> <span>Visit website</span>
               </NavLink>
             ) : ''}
           </div>
           <div className='tools'>
             {projItem.tools?.map(tool => (  
-              <div key={tool}>  
+              <div key={tool} data-aos="fade-up">  
                 {tool}  
               </div>  
             ))}  
@@ -103,7 +103,7 @@ function ProjectView() {
         </div>
         <div className='container pt-4' style={{paddingBottom: '5rem' }}>
           {projItem.featured_image?.map(featured => (  
-              <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured}/>
+              <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured} data-aos="fade-up"/>
           ))} 
           
         </div>

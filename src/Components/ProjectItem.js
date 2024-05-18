@@ -4,11 +4,10 @@ import data from '../api/projects.json';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ProjectItem({itemCount, viewAll, otherItem}) {
-
     const projects = data.slice(0, itemCount).map((p, index) =>{
         if(index <= 2) {
             return( 
-                <div className='project container' key={index}>
+                <div className='project container' key={index} data-aos="flip-left">
                     <div className='content'>
                         <div className={`details ${p.id%2 ===0 ? "order-last": ""}`}>
                             <LineClipPath content={`0${p.id}`}/>
@@ -29,7 +28,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
 
     const otherProjects = data.slice(3, itemCount).map((p, index) =>{
         return (
-            <div className="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index}>
+            <div className="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index} data-aos="flip-left">
                 <NavLink to={`/project/${p.url}`} className='card-link'>
                     <div className="card bgColor p-3 mb-2 shadow project-card h-100">
                         <div className="d-flex justify-content-between">
@@ -71,7 +70,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
         
         { viewAll ?(
         <div className='d-flex justify-content-center pb-5'>
-            <NavLink to='/project' className="button-50 button" >
+            <NavLink to='/project' className="button-50 button" data-aos="fade-up">
                 View all projects &nbsp;<i className="fa-solid fa-arrow-right text-center"></i>
             </NavLink>
         </div>

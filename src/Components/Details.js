@@ -29,8 +29,8 @@ function Details() {
         <div className='details-about container'>
             <div className='content'>
                 <div className={`details`}>
-                    <h3 className='font-weight-bold pb-3'>Hello there</h3>
-                    <p className="text-muted f-text-m pb-4">
+                    <h3 className='font-weight-bold pb-3' data-aos="fade-up">Hello there</h3>
+                    <p className="text-muted f-text-m pb-4" data-aos="fade-up">
                         <b>Inan</b> is a dedicated web developer with a deep passion 
                         for frontend technologies. My journey in web development 
                         started with a fascination for creating intuitive and engaging 
@@ -41,25 +41,25 @@ function Details() {
                         friend by my side while I code, they remind me of the importance of 
                         balance and empathy, qualities I bring into my development projects.
                     </p>
-                    <NavLink to={`/contact`} className="link" >
+                    <NavLink to={`/contact`} className="link" data-aos="fade-up">
                     <i className="fa-regular fa-paper-plane"></i> <span>Send Message</span>
                     </NavLink>
                     <div className='pt-5'>
-                        <h4 className='f-text-m pb-2'>Personal Information</h4>
-                        <div className='item-border pb-5'>
-                            <div>  
+                        <h4 className='f-text-m pb-2' data-aos="fade-up">Personal Information</h4>
+                        <div className='item-border pb-5' >
+                            <div data-aos="fade-up">  
                                <strong className='font-weight-bold text-muted f-text-s'>Name </strong>
                                <span>Ferdinand T. Celis</span>
                             </div> 
-                            <div>  
+                            <div data-aos="fade-up">  
                                <strong className='font-weight-bold text-muted f-text-s'>Birthday</strong>
                                <span>September 4, 1998</span>
                             </div> 
-                            <div>  
+                            <div data-aos="fade-up">  
                                 <strong className='font-weight-bold text-muted f-text-s'>Age</strong>
                                <span>{age}</span>  
                             </div>  
-                            <div>  
+                            <div data-aos="fade-up">  
                                 <strong className='font-weight-bold text-muted f-text-s'>Degree</strong>
                                <span>
                                     Bachelor of Science in Information Technology
@@ -69,7 +69,7 @@ function Details() {
                     </div>
                     
                 </div>
-                <div className='image'>
+                <div className='image' data-aos="fade-up">
                     <LineClipPath content={`About me`} textClass={'f-text-s'}/>
                     <LazyLoadImage src={require(`../assets/images/me-at-office.jpg`)} />
                 </div>
