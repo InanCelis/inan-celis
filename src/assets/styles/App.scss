@@ -90,7 +90,39 @@ html, #root {
     display: none;
   }
 }
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #bd883c; /* Change this to your desired color */
+}
 
+/* Optional: Customize hover and active states */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #d28922; /* Change this to your desired color */
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  color: #bd883c; /* Change this to your desired color */
+}
+.project-swiper .swiper-slide img {
+  opacity: 0.5 !important;
+}
+.project-swiper .swiper-slide-thumb-active img, .project-swiper .thisImage img  {
+  opacity: 1 !important;
+}
+.swiperImageItem {
+  min-height: 150px;
+  max-height: 150px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .swiperImageItem {
+    max-height: 80px;
+    min-height: 80px;
+  }
+}
 
 body {
   height: 100vh;

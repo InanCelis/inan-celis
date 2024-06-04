@@ -106,6 +106,7 @@
     position: fixed;
     right: 3%;
     bottom: 6%;
+    z-index: 999;
     button {
         padding: 15px;
         background-color: color(textColor);

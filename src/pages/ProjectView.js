@@ -6,7 +6,7 @@ import { useHelperFunction } from '../utils/helperFuntion';
 import '../assets/styles/project.scss';
 import project from '../api/projects.json';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import NotFound from './NotFound';
+import ProjectImageSlider from '../Components/Slice/ProjectImageSlider';
 
 function ProjectView() {
   
@@ -21,7 +21,7 @@ function ProjectView() {
     let obj = data.filter(item => item.url === str[str.length - 1]);
     
     useEffect(() => {
-        console.log(obj)
+        // console.log(obj)
         if(obj.length === 0) {
           navigate("/not-found")
         } else {
@@ -102,9 +102,10 @@ function ProjectView() {
           </div>
         </div>
         <div className='container pt-4' style={{paddingBottom: '5rem' }}>
-          {projItem.featured_image?.map(featured => (  
+          <ProjectImageSlider data={projItem.featured_image} />
+          {/* {projItem.featured_image?.map(featured => (  
               <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured} data-aos="fade-up"/>
-          ))} 
+          ))}  */}
           
         </div>
       </>

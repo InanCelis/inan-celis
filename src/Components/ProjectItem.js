@@ -39,7 +39,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
                             <h3>{p.company}</h3>
                             <div className="mt-3">
                                 <span className="text-muted">
-                                    {p.description.length > 250 ?
+                                    {p.description.length > 200 ?
                                         `${p.description.substring(0, 200)}...` : p.description
                                     }
                                 </span>
