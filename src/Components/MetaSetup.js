@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 const MetaSetup = () => (
   <div>
     <Helmet>
-      <title>Inan Celis Test</title>
+      <title>Inan Celis</title>
       <meta name="description" content="Inan is a dedicated web developer with a deep passion for frontend technologies." />
       <meta name="keywords" content="Inan, Inan Celis, inan portfolio, inan celis" />
       <meta property="og:title" content="" />
