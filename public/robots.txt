@@ -1,4 +1,4 @@
 # robots.txt
 User-agent: *
 Disallow:
-Sitemap: https://github.com/InanCelis/inancelis.github.io/sitemap.xml
+Sitemap: https://inancelis.github.io/sitemap.xml
