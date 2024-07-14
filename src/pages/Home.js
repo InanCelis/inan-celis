@@ -12,12 +12,12 @@ import Work from '../Components/Work';
 import Expertise from '../Components/Expertise';
 import Skills from '../Components/Skills';
 import { NavLink } from 'react-router-dom';
-// import MetaSetup from '../Components/MetaSetup';
+import MetaSetup from '../Components/MetaSetup';
 function Home() {
   useHelperFunction('');
   return (
     <Layout>
-      {/* <MetaSetup /> */}
+      <MetaSetup />
       <div className='d-none d-md-block'>
         <RainbowSwirl position={'Absolute'}/>
       </div>
