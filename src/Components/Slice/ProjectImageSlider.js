@@ -47,19 +47,16 @@ const ThumbsSwiper = ({data}) => {
                         modules={[Thumbs, Navigation]}
                         navigation
                     >
-                            {data?.map(featured => (  
-                                <SwiperSlide>
-                                    <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured} data-aos="fade-up"/>
-                                </SwiperSlide>
-                                
-                            ))} 
+                        {data?.map(featured => (  
+                            <SwiperSlide>
+                                <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured} data-aos="fade-up"/>
+                            </SwiperSlide>
+                        ))} 
                     </Swiper>
                     <Swiper
-                    // style={{ width: '100%', height: 'auto' }}
                     spaceBetween={10}
                     thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                     modules={[Thumbs]}
-                    
                     >
                         {data?.map(featured => (  
                             <SwiperSlide className='thisImage'>
@@ -71,9 +68,9 @@ const ThumbsSwiper = ({data}) => {
                 </>
         
             ) : 
-                data?.map(featured => (  
-                        <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured} data-aos="fade-up"/>
-                ))
+            data?.map(featured => (  
+                    <LazyLoadImage src={`project/featured/${featured}`}  className="w-100 mb-3" key={featured} data-aos="fade-up"/>
+            ))
         }
     </div>
       

@@ -1,24 +1,6 @@
 [
     {
         "id": 1,
-        "position": "Software Engineer",
-        "job_type": "Full-time",
-        "from_date": "March 2023",
-        "to_date": "Present",
-        "company": "Accenture",
-        "address": "Uptown Taguig, Philippines",
-        "site": "https://www.accenture.com/",
-        "site_text": "accenture.com",
-        "description": "<span className='text-muted'>As a Software Engineer at Accenture, responsibilities include designing, coding, and testing software applications, collaborating with cross-functional teams to understand client requirements, implementing innovative solutions using various programming languages and technologies, ensuring software quality and performance through rigorous testing, participating in agile development processes, providing maintenance and support for existing applications, and staying updated with the latest industry trends and technologies to contribute to continuous improvement efforts.</span>",
-        "tool" : [
-            "Asp.net",
-            "C#",
-            "Oracle Database"
-        ],
-        "logo": "acn.png"
-    },
-    {
-        "id": 2,
         "position": "Freelancer",
         "job_type": "Part time",
         "from_date": "2019",
@@ -35,6 +17,24 @@
             "T-shirt Design"
         ],
         "logo": "freelance.png"
+    },
+    {
+        "id": 2,
+        "position": "Software Engineer",
+        "job_type": "Full-time",
+        "from_date": "March 2023",
+        "to_date": "Present",
+        "company": "Accenture",
+        "address": "Uptown Taguig, Philippines",
+        "site": "https://www.accenture.com/",
+        "site_text": "accenture.com",
+        "description": "<span className='text-muted'>As a Software Engineer at Accenture, responsibilities include designing, coding, and testing software applications, collaborating with cross-functional teams to understand client requirements, implementing innovative solutions using various programming languages and technologies, ensuring software quality and performance through rigorous testing, participating in agile development processes, providing maintenance and support for existing applications, and staying updated with the latest industry trends and technologies to contribute to continuous improvement efforts.</span>",
+        "tool" : [
+            "Asp.net",
+            "C#",
+            "Oracle Database"
+        ],
+        "logo": "acn.png"
     },
     {
         "id": 3,

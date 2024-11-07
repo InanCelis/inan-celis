@@ -146,7 +146,26 @@ body {
 .textMain {
   color: color(main);
 }
+.table-bordered-mode {
+  border: 1px solid color(textColor);
 
+  tr, th, td, thead{
+    border: 1px solid color(textColor); 
+  }
+}
+
+.tool-used {
+  display: flex;
+  flex-wrap: wrap;
+  span {
+      font-size: 12px;
+      padding: 8px;
+      margin-bottom: 8px;
+      margin-right: 10px;
+      background: color(rgbaColor);
+      border-radius: 30px;
+  }
+}
 a.in-button-main {
   text-decoration: none;
   background-color: color(main);

@@ -4,18 +4,18 @@ $font-raleway: "Raleway", sans-serif;
 $transition: 0.7s ease background-color, 0.7s ease opacity;
 
 [data-theme="theme-dark"] {
-    --main:#bd883c;
     --bg:#181818;
     --text:snow;
 }
 
 [data-theme="theme-light"] {
-    --main:#bd883c;
+    
     --bg:snow;
     --text:#181818;
 }
 
 :root {
+    --main:#bd883c;
     --primary:#6b6b6b;
     --text-light: color-mix(in lab, var(--text) 60%, transparent);
     --snowColor:snow;

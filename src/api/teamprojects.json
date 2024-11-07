@@ -1,0 +1,108 @@
+[
+    {
+        "name":"Valens Research",
+        "link":"https://www.valens-research.com/",
+        "link_name":"valens-research.com",
+        "tools": [
+            "JavaScript",
+            "JQuery",
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"The I Institute",
+        "link":"https://i-inst.org/",
+        "link_name":"i-inst.org",
+        "tools": [
+            "VueJs",
+            "Node",
+            "Creation of Email Template",
+            "MailChimp"
+        ]
+    },
+    {
+        "name":"VR Stripe",
+        "link":"https://vrstripe.valens-research.net/",
+        "link_name":"vrstripe.valens-research.net",
+        "tools": [
+            "VueJs",
+            "Laravel"
+        ]
+    },
+    {
+        "name":"Axe Master Throwing",
+        "link":"https://www.axemaster.com/",
+        "link_name":"axemaster.com",
+        "tools": [
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"Paranoia Quest Escape Room",
+        "link":"https://www.paranoiaquest.com/",
+        "link_name":"paranoiaquest.com",
+        "tools": [
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"Hint Hunt Canada",
+        "link":"https://hinthuntcanada.com/",
+        "link_name":"hinthuntcanada.com",
+        "tools": [
+            "WordPress",
+            "Divi"
+        ]
+    },
+    {
+        "name":"Pierce County Asylum Productions",
+        "link":"https://piercecountyasylumproductions.com/",
+        "link_name":"piercecountyasylumproductions.com",
+        "tools": [
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"Romantic Adventure Getaways",
+        "link":"https://romanticadventuregetaways.com/",
+        "link_name":"romanticadventuregetaways.com",
+        "tools": [
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"Remix Skate & Event Center",
+        "link":"https://skateremix.com/",
+        "link_name":"skateremix.com",
+        "tools": [
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"Spin Art Nation",
+        "link":"https://spinartnation.com/",
+        "link_name":"spinartnation.com",
+        "tools": [
+            "WordPress",
+            "Elementor"
+        ]
+    },
+    {
+        "name":"The Gym Tracy",
+        "link":"https://thegymtracy.com/",
+        "link_name":"thegymtracy.com",
+        "tools": [
+            "WordPress",
+            "Avada Builder"
+        ]
+    }
+    
+    
+    
+]

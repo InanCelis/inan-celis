@@ -88,7 +88,7 @@ function ProjectView() {
               {projItem.description } {projItem.responsibilities}
             </p>
             { projItem.website ?(
-              <NavLink target={"_blank"} to={`${projItem.website}`} className="link" data-aos="fade-up">
+              <NavLink target={"_blank"} to={`${projItem.website}`} className='link'>
                 <i className="fa-solid fa-chevron-right"></i> <span>Visit website</span>
               </NavLink>
             ) : ''}

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import LineClipPath from './Slice/LineClipPath';
 import data from '../api/projects.json';
+import TeamProjectData from '../api/teamprojects.json';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ProjectItem({itemCount, viewAll, otherItem}) {
@@ -26,7 +27,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
         } 
     });
 
-    const otherProjects = data.slice(3, itemCount).map((p, index) =>{
+    const soloProjects = data.slice(3, itemCount).map((p, index) =>{
         return (
             <div className="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index} data-aos="flip-left">
                 <NavLink to={`/project/${p.url}`} className='card-link'>
@@ -56,16 +57,54 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
         )
     });
 
+    const teamProjects = TeamProjectData.map((val, count) => {
+        return (
+            <tr>
+                <td>{count+1}</td>
+                <td>{val.name}</td>
+                <td>
+                    <a href={val.link} target='_blank'>{val.link_name}</a>
+                </td>
+                <td>
+                <div className="tool-used">
+                    {val.tools.map(function(tool, i){
+                        return <span key={i}>{tool}</span>
+                    })}
+                </div>
+                </td>
+            </tr>
+        )
+    });
+
   return (
     <>
         {projects}
         {otherItem ?(
-            <div className='container pt-5'>
-                <h4 className='f-text-m'>Other Projects</h4>
-                <div className="row project-row">
-                    {otherProjects}
+            <>
+                <div className='container pt-5'>
+                    <h4 className='f-text-m'>Solo Projects</h4>
+                    <div className="row project-row">
+                        {soloProjects}
+                    </div>
                 </div>
-            </div>
+
+                <div className='container pt-5'>
+                    <h4 className='f-text-m pb-2'>Team Projects</h4>
+                    <table className="table textColor table-bordered-mode">
+                        <thead className="bgMain">
+                            <tr>
+                                <th>#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Website</th>
+                                <th scope="col">Tools / Responsibilities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {teamProjects}
+                        </tbody>
+                    </table>
+                </div>
+            </>
         ):''}
         
         { viewAll ?(

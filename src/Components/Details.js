@@ -41,7 +41,7 @@ function Details() {
                         friend by my side while I code, they remind me of the importance of 
                         balance and empathy, qualities I bring into my development projects.
                     </p>
-                    <NavLink to={`/contact`} className="link" data-aos="fade-up">
+                    <NavLink to={`/contact`} className="link">
                     <i className="fa-regular fa-paper-plane"></i> <span>Send Message</span>
                     </NavLink>
                     <div className='pt-5'>

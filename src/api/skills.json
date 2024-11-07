@@ -21,10 +21,13 @@
         "icon":"lab la-java"
     },
     {
+        "text":"Python",
+        "icon":"lab la-python"
+    },
+    {
         "text":"ReactJS",
         "icon":"lab la-react"
     },
-    
     {
         "text":"Vue / Nuxt",
         "icon":"lab la-vuejs"
@@ -34,7 +37,6 @@
         "text":"JS / JQuery",
         "icon":"lab la-js-square"
     },
-    
     {
         "text":"NodeJs",
         "icon":"lab la-node"
