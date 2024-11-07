@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.06558ace.css",
-    "main.js": "/static/js/main.c16ae8b9.js",
+    "main.css": "/static/css/main.34e58f11.css",
+    "main.js": "/static/js/main.e797f77a.js",
     "static/js/453.42befe1a.chunk.js": "/static/js/453.42befe1a.chunk.js",
     "static/media/jhola-1.png": "/static/media/jhola-1.6dbd5c9249c006f69fce.png",
     "static/media/asti-bg.png": "/static/media/asti-bg.37bcc625d1701dea929c.png",
@@ -24,6 +24,7 @@
     "static/media/asti-laptop.png": "/static/media/asti-laptop.a2f6cc986279bae269da.png",
     "static/media/championsclub-laptop.png": "/static/media/championsclub-laptop.302166ff272e823cc3ee.png",
     "static/media/ati-thumbnail.png": "/static/media/ati-thumbnail.a910862fec90b8be7379.png",
+    "static/media/escape-in-time-laptop.png": "/static/media/escape-in-time-laptop.d73f0ccdbcdc80e83f94.png",
     "static/media/absi-6.png": "/static/media/absi-6.3c508b9e0c4573c38cf1.png",
     "static/media/baby-thumbnail.png": "/static/media/baby-thumbnail.115dcb2e9614c1f80bc2.png",
     "static/media/baby-company-laptop.png": "/static/media/baby-company-laptop.022dfefec3250d281557.png",
@@ -31,7 +32,9 @@
     "static/media/ati-6.png": "/static/media/ati-6.61506039d78178127c4b.png",
     "static/media/baby-company-bg.png": "/static/media/baby-company-bg.b9df5e3d7a09b8464761.png",
     "static/media/asticom.png": "/static/media/asticom.197f20825e7db1e5e2f7.png",
+    "static/media/blue-apple-laptop.png": "/static/media/blue-apple-laptop.268d121167f3c9811a99.png",
     "static/media/champions-bg.webp": "/static/media/champions-bg.13ae9bd2ed6298d28f0b.webp",
+    "static/media/laptop.png": "/static/media/laptop.5e21f1b8b3ff79203fe0.png",
     "static/media/me-at-office.jpg": "/static/media/me-at-office.1a1b99316b39ab22f1f7.jpg",
     "static/media/acn.png": "/static/media/acn.af751200158649bce6cd.png",
     "static/media/freelance.png": "/static/media/freelance.41ae9d695a5a4ec91767.png",
@@ -40,12 +43,13 @@
     "index.html": "/index.html",
     "static/media/sun.svg": "/static/media/sun.c2f30e0dcb2ba02ad7ea.svg",
     "static/media/moon.svg": "/static/media/moon.9ea86e7675730ad2b4e4.svg",
-    "main.06558ace.css.map": "/static/css/main.06558ace.css.map",
-    "main.c16ae8b9.js.map": "/static/js/main.c16ae8b9.js.map",
+    "static/media/debug.log": "/static/media/debug.75cea4adc25f5cfb58c0.log",
+    "main.34e58f11.css.map": "/static/css/main.34e58f11.css.map",
+    "main.e797f77a.js.map": "/static/js/main.e797f77a.js.map",
     "453.42befe1a.chunk.js.map": "/static/js/453.42befe1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06558ace.css",
-    "static/js/main.c16ae8b9.js"
+    "static/css/main.34e58f11.css",
+    "static/js/main.e797f77a.js"
   ]
 }
