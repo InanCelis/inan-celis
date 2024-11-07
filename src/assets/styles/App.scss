@@ -223,7 +223,9 @@ a.in-button-main {
   text-decoration: none;
   
 }
-
+.button-1 {
+  border: 1px solid color(main) !important;
+}
 .button:after {
   content: "";
   width: 100%;
@@ -245,10 +247,11 @@ a.in-button-main {
 
 .button-52 {
   color: color(snowColor);
+  font-weight: 300;
 }
 .button-50 {
   color: color(bgColor);
-  font-weight: 500;
+  font-weight: 400;
 }
 .button:hover:after {
   top: 0px;

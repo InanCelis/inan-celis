@@ -41,7 +41,9 @@ function Home() {
       <div className='margin-top-big'>
         <Work/>
       </div>
-      <ResumeButton/>
+      <div className="d-flex justify-content-center pb-5">
+          <ResumeButton />
+      </div>
       
     </Layout>
   );
