@@ -23,7 +23,9 @@ function Resume() {
       <div className='pt-5'>
           <Work />
       </div>
-      <ResumeButton/>
+      <div className="d-flex justify-content-center pb-5">
+          <ResumeButton />
+      </div>
     </Layout>
   );
 }
