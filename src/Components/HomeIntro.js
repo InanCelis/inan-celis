@@ -17,7 +17,7 @@ function HomeIntro({photo}) {
                     Creative web developer and designer - crafting visually stunning, functional websites. 
                     Elevate your brand with bespoke design and innovative technology.
                     </p>
-                    <div className='row'>
+                    <div className='row m-0'>
                         <NavLink to="/contact" className="button-52 button mr-5 mb-4 mb-sm-0" >Hire Me Now</NavLink>
                         <ResumeButton />
                     </div>
