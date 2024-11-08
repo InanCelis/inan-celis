@@ -10,6 +10,25 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color(textColor);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: color(main);
+}
 
 html, #root {
   font-family: $font-raleway;
@@ -478,7 +497,9 @@ footer {
       font-size: sizes(fontSizeXS);
       --p: 100%;
   }
-
+  .mobile-hide {
+    display: none;
+  }
   .page-indicator {
     height:8rem;
     width: 9rem;
@@ -527,7 +548,7 @@ footer {
   .padding-mobile{
     padding: 0 3% 0 3% !important;
     height: unset;
-  }
+  } 
 }
 
 

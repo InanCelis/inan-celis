@@ -60,7 +60,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
     const teamProjects = TeamProjectData.map((val, count) => {
         return (
             <tr>
-                <td>{count+1}</td>
+                <td className='mobile-hide'>{count+1}</td>
                 <td>{val.name}</td>
                 <td>
                     <a href={val.link} target='_blank'>{val.link_name}</a>
@@ -90,10 +90,10 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
 
                 <div className='container pt-5'>
                     <h4 className='f-text-m pb-2'>Team Projects</h4>
-                    <table className="table textColor table-bordered-mode">
+                    <table className="table textColor table-bordered-mode table-responsive">
                         <thead className="bgMain">
                             <tr>
-                                <th>#</th>
+                                <th className='mobile-hide'>#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Website</th>
                                 <th scope="col">Tools / Responsibilities</th>
