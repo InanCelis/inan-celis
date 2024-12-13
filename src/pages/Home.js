@@ -27,7 +27,7 @@ function Home() {
         <MouseScroll />
       </div>
       <div>
-        <ProjectItem itemCount={3} viewAll={true} hasObject={null} otherItem={false}/>
+        <ProjectItem itemCount={5} viewAll={true} hasObject={null} otherItem={false}/>
       </div>
       <div className='margin-top-big padding-mobile'>
         <Details/>

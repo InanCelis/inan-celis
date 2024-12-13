@@ -6,7 +6,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ProjectItem({itemCount, viewAll, otherItem}) {
     const projects = data.slice(0, itemCount).map((p, index) =>{
-        if(index <= 2) {
+        if(index <= 4) {
             return( 
                 <div className='project container' key={index} data-aos="flip-left">
                     <div className='content'>
@@ -27,7 +27,7 @@ function ProjectItem({itemCount, viewAll, otherItem}) {
         } 
     });
 
-    const soloProjects = data.slice(3, itemCount).map((p, index) =>{
+    const soloProjects = data.slice(5, itemCount).map((p, index) =>{
         return (
             <div className="col-md-6 col-lg-4 col-sm-6 pt-2 pb-2" key={index} data-aos="flip-left">
                 <NavLink to={`/project/${p.url}`} className='card-link'>
