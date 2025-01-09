@@ -28,7 +28,7 @@
         "address": "Uptown Taguig, Philippines",
         "site": "https://www.accenture.com/",
         "site_text": "accenture.com",
-        "description": "<span className='text-muted'>As a Software Engineer at Accenture, responsibilities include designing, coding, and testing software applications, collaborating with cross-functional teams to understand client requirements, implementing innovative solutions using various programming languages and technologies, ensuring software quality and performance through rigorous testing, participating in agile development processes, providing maintenance and support for existing applications, and staying updated with the latest industry trends and technologies to contribute to continuous improvement efforts.</span>",
+        "description": "<b>Responsibilities</b> <ul className='text-muted'><li>Develop, test, and deploy scalable software solutions for enterprise-level clients.</li> <li>Collaborate with cross-functional teams, including analysts, designers, and other developers,to deliver client-centric solutions.</li> <li>Identify and resolve software defects through rigorous testing and debugging processes.</li> <li>Provide technical support and maintenance for existing applications to ensure optimal performance.</li> <li>Ensure compliance with coding standards and best practices, including security and data protection protocols.</li> </ul>",
         "tool" : [
             "Asp.net",
             "C#",

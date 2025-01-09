@@ -23,7 +23,7 @@ function Expertise() {
 
     return (
         <div className="expertise container">
-            <h3 className='font-weight-bold text-center pb-5' data-aos="fade-up">My Expertise </h3>
+            <h3 className='font-weight-bold text-center pb-5' data-aos="fade-up">My Expertise</h3>
             <div className="expertise-row row">
                 {expertise}
             </div>
